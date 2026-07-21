@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sign in to your AquaRise swimmer portal to track progress, manage your account, and access your swimming journey.">
+  <title>Login – AquaRise Swimmer Portal</title>
+  <link rel="icon" type="image/svg+xml" href="../assets/favicon/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="../css/themes.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/login.css">
+  <link rel="stylesheet" href="../css/rtl.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+  <style>
+    .theme-floating { position: fixed; top: 1.5rem; inset-inline-end: 1.5rem; z-index: 100; display: flex; gap: 0.5rem; }
+    .floating-logo { position: absolute; top: 1.5rem; inset-inline-start: 1.5rem; z-index: 1000; display: flex; align-items: center; gap: 0.5rem; text-decoration: none; }
+  </style>
+</head>
+<body>
+
+  <!-- Floating Logo -->
+  <a href="../index.html" class="floating-logo">
+    <img src="../assets/favicon/favicon.svg" alt="AquaRise Logo" style="height: 40px; width: auto;">
+    <span style="font-size: 1.5rem; font-weight: 700; color: var(--text-heading); font-family: 'DM Sans', sans-serif;">AquaRise</span>
+  </a>
+  <div class="theme-floating">
+    <button class="theme-toggle btn" id="theme-toggle" aria-label="Toggle Dark Mode" style="width:40px; height:40px; border-radius:50%; display:flex; align-items:center; justify-content:center; background:var(--surface-color); color:var(--text-color); border:1px solid var(--border-color); padding:0;"><i class="fas fa-moon"></i></button>
+    <button class="rtl-toggle btn" id="rtl-toggle" aria-label="Toggle RTL" style="width:40px; height:40px; border-radius:50%; display:flex; align-items:center; justify-content:center; background:var(--surface-color); color:var(--text-color); border:1px solid var(--border-color); padding: 0; font-weight:600; font-size:0.75rem;">RTL</button>
+  </div>
+
+  <!-- ============ HEADER ============ -->
+  
+
+  <main>
+    <!-- ============ SECTION 1: HERO ============ -->
+    <section class="login-hero section-padding">
+      <div class="login-hero-bg">
+        <img src="../assets/images/hero_pool.png" alt="Olympic Swimming Pool">
+      </div>
+      <div class="login-hero-overlay"></div>
+      <div class="container">
+        <div class="breadcrumb">
+          <a href="../index.html">Home</a>
+          <i class="fas fa-chevron-right"></i>
+          <span>Login</span>
+        </div>
+        <h1>Welcome Back to <span>AquaRise</span></h1>
+        <p>Sign in to access your personalized dashboard, track your progress, and manage your swimming journey.</p>
+      </div>
+    </section>
+
+    <!-- ============ SECTION 2 & 3: SPLIT AUTH + LOGIN FORM ============ -->
+    <section class="split-section section-padding" id="auth-section">
+      <div class="container">
+        <div class="split-wrapper">
+          <div class="split-image-panel reveal-left">
+            <img src="../assets/images/facility.png" alt="AquaRise Premium Facility">
+            <div class="split-image-overlay"></div>
+            <div class="split-image-stats">
+              <div class="split-stat">
+                <div class="stat-number">5000+</div>
+                <div class="stat-label">Students</div>
+              </div>
+              <div class="split-stat">
+                <div class="stat-number">25</div>
+                <div class="stat-label">Expert Coaches</div>
+              </div>
+              <div class="split-stat">
+                <div class="stat-number">15+</div>
+                <div class="stat-label">Years Experience</div>
+              </div>
+            </div>
+          </div>
+          <div class="login-card reveal-right" id="login-content">
+            <div class="login-card-header">
+              <div class="lock-icon"><i class="fas fa-lock"></i></div>
+              <h3>Sign In</h3>
+              <p>Access your swimmer dashboard</p>
+            </div>
+            <form class="login-form" id="login-form" novalidate data-no-global-validate>
+              <div class="form-group">
+                <label for="login-email">Email Address</label>
+                <div class="input-wrapper">
+                  <input type="email" id="login-email" name="email" placeholder="swimmer@aquarise.com" required autocomplete="email">
+                </div>
+                <div class="field-error" id="email-error"></div>
+              </div>
+              <div class="form-group">
+                <label for="login-password">Password</label>
+                <div class="input-wrapper">
+                  <input type="password" id="login-password" name="password" placeholder="&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;&#8226;" required autocomplete="current-password">
+                  <button type="button" class="toggle-password fas fa-eye" aria-label="Toggle password visibility"></button>
+                </div>
+                <div class="field-error" id="password-error"></div>
+              </div>
+              <div class="form-options">
+                <div class="remember-group">
+                  <input type="checkbox" id="remember-me" name="remember">
+                  <label for="remember-me">Remember me</label>
+                </div>
+                <a href="#" class="forgot-link">Forgot Password?</a>
+              </div>
+              <button type="submit" class="login-btn"><i class="fas fa-lock"></i> Sign In</button>
+              <div class="form-divider"><span>or continue with</span></div>
+              <div class="social-row" style="display:grid;grid-template-columns:1fr 1fr;gap:0.75rem;">
+                <a href="#" class="social-btn google" style="padding:0.75rem;font-size:0.85rem;"><i class="fab fa-google"></i> Google</a>
+                <a href="#" class="social-btn facebook" style="padding:0.75rem;font-size:0.85rem;"><i class="fab fa-facebook-f"></i> Facebook</a>
+              </div>
+              <p class="create-account-link">Don't have an account? <a href="signup.html">Create Account</a></p>
+            </form>
+            <div class="success-overlay" id="login-success">
+              <div class="success-icon"><i class="fas fa-check-circle"></i></div>
+              <h4>Welcome Back!</h4>
+              <p>You have been successfully signed in. Redirecting you to your dashboard...</p>
+              <a href="login.html" class="login-btn" style="width:auto;display:inline-flex;"><i class="fas fa-redo"></i> Sign In Again</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SECTION 4: CONTINUE WITH (Social Login) ============ -->
+    <section class="social-section section-padding">
+      <div class="container">
+        <div class="text-center">
+          <span class="section-tag">Quick Access</span>
+          <h2 class="section-title">Continue With</h2>
+          <p class="section-subtitle">Use your existing accounts to sign in instantly</p>
+        </div>
+        <div class="social-grid">
+          <a href="#" class="social-btn google reveal"><i class="fab fa-google"></i> Google</a>
+          <a href="#" class="social-btn facebook reveal"><i class="fab fa-facebook-f"></i> Facebook</a>
+          <a href="#" class="social-btn apple reveal"><i class="fab fa-apple"></i> Apple</a>
+          <a href="#" class="social-btn linkedin reveal"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SECTION 5: MEMBER BENEFITS ============ -->
+    <section class="benefits-section section-padding">
+      <div class="container">
+        <div class="text-center">
+          <span class="section-tag">Why Join</span>
+          <h2 class="section-title">Member Benefits</h2>
+          <p class="section-subtitle">Exclusive perks for AquaRise members</p>
+        </div>
+        <div class="benefits-grid">
+          <div class="benefit-card reveal">
+            <div class="benefit-icon"><i class="fas fa-calendar-check"></i></div>
+            <h4>Priority Batch Booking</h4>
+            <p>Book your preferred time slots before they fill up with exclusive priority access.</p>
+          </div>
+          <div class="benefit-card reveal">
+            <div class="benefit-icon"><i class="fas fa-user-graduate"></i></div>
+            <h4>Expert Coaches</h4>
+            <p>Train under certified professionals with years of competitive and teaching experience.</p>
+          </div>
+          <div class="benefit-card reveal">
+            <div class="benefit-icon"><i class="fas fa-trophy"></i></div>
+            <h4>Competition Access</h4>
+            <p>Participate in regional and national swimming championships representing AquaRise.</p>
+          </div>
+          <div class="benefit-card reveal">
+            <div class="benefit-icon"><i class="fas fa-chart-line"></i></div>
+            <h4>Training Progress</h4>
+            <p>Track your improvement with detailed performance analytics and milestone reports.</p>
+          </div>
+          <div class="benefit-card reveal">
+            <div class="benefit-icon"><i class="fas fa-glass-cheers"></i></div>
+            <h4>Exclusive Events</h4>
+            <p>Get invited to members-only workshops, galas, and networking events throughout the year.</p>
+          </div>
+          <div class="benefit-card reveal">
+            <div class="benefit-icon"><i class="fas fa-users"></i></div>
+            <h4>Swimming Community</h4>
+            <p>Connect with fellow swimmers, share experiences, and grow together in a supportive environment.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SECTION 6: SECURITY & PRIVACY ============ -->
+    <section class="security-section section-padding">
+      <div class="container">
+        <div class="text-center">
+          <span class="section-tag">Your Safety Matters</span>
+          <h2 class="section-title">Security &amp; Privacy</h2>
+          <p class="section-subtitle">We protect your data with industry-leading security measures</p>
+        </div>
+        <div class="security-grid">
+          <div class="security-card reveal">
+            <div class="sec-icon"><i class="fas fa-shield-alt"></i></div>
+            <div>
+              <h4>256-bit Secure Login</h4>
+              <p>Enterprise-grade encryption ensures your credentials remain safe during every session.</p>
+            </div>
+          </div>
+          <div class="security-card reveal">
+            <div class="sec-icon"><i class="fas fa-user-secret"></i></div>
+            <div>
+              <h4>Privacy Protection</h4>
+              <p>Your personal information is never shared with third parties without your consent.</p>
+            </div>
+          </div>
+          <div class="security-card reveal">
+            <div class="sec-icon"><i class="fas fa-key"></i></div>
+            <div>
+              <h4>Encrypted Credentials</h4>
+              <p>All passwords are hashed and encrypted using modern cryptographic standards.</p>
+            </div>
+          </div>
+          <div class="security-card reveal">
+            <div class="sec-icon"><i class="fas fa-file-contract"></i></div>
+            <div>
+              <h4>Safe Enrollment</h4>
+              <p>Payment and enrollment data is processed through secure, PCI-compliant gateways.</p>
+            </div>
+          </div>
+          <div class="security-card reveal">
+            <div class="sec-icon"><i class="fas fa-headset"></i></div>
+            <div>
+              <h4>Professional Support</h4>
+              <p>Our support team is available 24/7 to assist with any account or security concerns.</p>
+            </div>
+          </div>
+          <div class="security-card reveal">
+            <div class="sec-icon"><i class="fas fa-certificate"></i></div>
+            <div>
+              <h4>SSL Certified</h4>
+              <p>All data transmitted between your browser and our servers is SSL/TLS encrypted.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SECTION 7: CTA ============ -->
+    <section class="login-cta-section section-padding">
+      <div class="container">
+        <div class="login-cta-card reveal">
+          <h3>New to AquaRise?</h3>
+          <p>Join the premier swimming academy and embark on an extraordinary aquatic journey with world-class coaching and facilities.</p>
+          <div class="cta-btns">
+            <a href="contact.html" class="btn btn-primary"><i class="fas fa-user-plus"></i> Create Account</a>
+            <a href="services.html" class="btn-outline-light"><i class="fas fa-swimmer"></i> Explore Programs</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to Top"><i class="fas fa-arrow-up"></i></button>
+
+  <script src="../js/theme.js"></script>
+  <script src="../js/rtl.js"></script>
+  <script src="../js/validation.js"></script>
+  <script src="../js/main.js"></script>
+  <script src="../js/login.js"></script>
+</body>
+</html>
+

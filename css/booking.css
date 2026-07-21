@@ -1,0 +1,335 @@
+/* booking.css - AquaRise Booking Page Premium Styles */
+
+/* ============ Scroll Reveal ============ */
+.reveal { opacity: 0; transform: translateY(40px); transition: opacity 0.7s cubic-bezier(0.4,0,0.2,1), transform 0.7s cubic-bezier(0.4,0,0.2,1); }
+.reveal.visible { opacity: 1; transform: translateY(0); }
+.reveal-left { opacity: 0; transform: translateX(-40px); transition: opacity 0.7s cubic-bezier(0.4,0,0.2,1), transform 0.7s cubic-bezier(0.4,0,0.2,1); }
+.reveal-left.visible { opacity: 1; transform: translateX(0); }
+.reveal-right { opacity: 0; transform: translateX(40px); transition: opacity 0.7s cubic-bezier(0.4,0,0.2,1), transform 0.7s cubic-bezier(0.4,0,0.2,1); }
+.reveal-right.visible { opacity: 1; transform: translateX(0); }
+
+/* ============ SECTION 1: HERO BANNER ============ */
+.booking-hero {
+  position: relative; min-height: 70vh; display: flex; align-items: center; overflow: hidden;
+  background: linear-gradient(160deg, var(--bg-section) 0%, var(--bg-light) 100%);
+}
+.booking-hero-bg { position: absolute; inset: 0; z-index: 0; }
+.booking-hero-bg img { width: 100%; height: 100%; object-fit: cover; opacity: 0.06; }
+.booking-hero-overlay {
+  position: absolute; inset: 0; z-index: 1;
+  background: radial-gradient(ellipse at 50% 30%, rgba(11,79,140,0.08) 0%, transparent 60%),
+              radial-gradient(ellipse at 30% 70%, rgba(25,183,198,0.05) 0%, transparent 60%);
+}
+.booking-hero .container { position: relative; z-index: 2; text-align: center; }
+.booking-hero h1 { font-size: 3.75rem; margin-bottom: 1rem; letter-spacing: -1.5px; max-width: 800px; margin-left: auto; margin-right: auto; }
+.booking-hero h1 span { background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+.booking-hero .breadcrumb {
+  display: inline-flex; align-items: center; gap: 0.625rem;
+  padding: 0.5rem 1.5rem; background: var(--glass-bg); backdrop-filter: blur(12px);
+  border: 1px solid var(--glass-border); border-radius: var(--radius-full);
+  font-size: 0.9rem; color: var(--text-light); margin-bottom: 2rem; box-shadow: var(--shadow-sm);
+}
+.booking-hero .breadcrumb a { color: var(--secondary-color); font-weight: 600; }
+.booking-hero .breadcrumb i { font-size: 0.7rem; color: var(--text-light); }
+.booking-hero p { max-width: 640px; margin: 0 auto 2.5rem; font-size: 1.2rem; color: var(--text-light); line-height: 1.8; }
+.booking-hero-btns { display: flex; justify-content: center; gap: 1.25rem; flex-wrap: wrap; }
+
+/* ============ SECTION 2: PROGRAMS ============ */
+.programs-section { background: var(--bg-light); }
+.programs-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; }
+.booking-program-card { position: relative; }
+.booking-program-card .program-img { height: 200px; position: relative; }
+.booking-program-card .program-img img { width: 100%; height: 100%; object-fit: cover; transition: transform var(--transition-slow); }
+.booking-program-card:hover .program-img img { transform: scale(1.08); }
+.booking-program-card .program-badge {
+  position: absolute; top: 1rem; left: 1rem;
+  background: var(--glass-bg); backdrop-filter: blur(8px);
+  padding: 0.3rem 1rem; border-radius: var(--radius-full);
+  font-family: 'DM Sans', sans-serif; font-weight: 700; font-size: 0.75rem;
+  color: var(--text-heading); border: 1px solid var(--glass-border);
+  display: flex; align-items: center; gap: 0.4rem;
+}
+.booking-program-card .program-content { padding: 1.75rem; }
+.booking-program-card .program-content h3 { font-size: 1.25rem; margin-bottom: 0.75rem; }
+.booking-program-card .program-meta {
+  display: flex; flex-wrap: wrap; gap: 1rem; margin-bottom: 0.75rem; font-size: 0.85rem; color: var(--text-body);
+}
+.booking-program-card .program-meta span { display: flex; align-items: center; gap: 0.35rem; }
+.booking-program-card .program-meta i { color: var(--secondary-color); font-size: 0.8rem; }
+.booking-program-card .program-content p { font-size: 0.9rem; color: var(--text-light); line-height: 1.6; margin-bottom: 1.25rem; }
+.booking-program-card .select-program-btn { width: 100%; }
+
+/* ============ SECTION 3: BATCH SCHEDULE ============ */
+.schedule-section { background: var(--bg-section); }
+.schedule-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; }
+.schedule-card {
+  background: var(--bg-card); border-radius: var(--radius-lg); padding: 2rem 1.75rem;
+  border: 1px solid var(--border-color); box-shadow: var(--shadow-sm);
+  transition: all var(--transition-normal); text-align: center;
+  display: flex; flex-direction: column; gap: 0.75rem;
+}
+.schedule-card:hover { transform: translateY(-8px); box-shadow: var(--shadow-lg); border-color: var(--secondary-color); }
+.schedule-icon {
+  width: 56px; height: 56px; border-radius: var(--radius-full);
+  background: rgba(25,183,198,0.1); color: var(--secondary-color);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.4rem; margin: 0 auto; transition: all var(--transition-normal);
+}
+.schedule-card:hover .schedule-icon { background: var(--secondary-color); color: #fff; transform: scale(1.1); }
+.schedule-card h3 { font-size: 1.15rem; margin-bottom: 0.25rem; }
+.schedule-detail { display: flex; justify-content: space-between; align-items: center; }
+.schedule-label { font-size: 0.8rem; color: var(--text-light); font-weight: 500; text-transform: uppercase; letter-spacing: 0.5px; }
+.schedule-value { font-size: 0.9rem; color: var(--text-heading); font-weight: 600; }
+.schedule-value.seats { color: var(--secondary-color); }
+.schedule-value.difficulty {
+  padding: 0.15rem 0.75rem; border-radius: var(--radius-full); font-size: 0.75rem; font-weight: 700;
+  text-transform: uppercase; letter-spacing: 0.5px;
+}
+.schedule-value.difficulty.beginner { background: rgba(25,183,198,0.12); color: var(--secondary-color); }
+.schedule-value.difficulty.intermediate { background: rgba(255,200,87,0.15); color: #b8860b; }
+.schedule-value.difficulty.all { background: rgba(11,79,140,0.1); color: var(--primary-color); }
+.schedule-card .btn { margin-top: auto; width: 100%; }
+
+/* ============ SECTION 4: BOOKING FORM ============ */
+.form-section { background: var(--bg-light); }
+.form-wrapper { display: grid; grid-template-columns: 1.3fr 1fr; gap: 3rem; align-items: start; }
+.form-card { padding: 2.5rem; }
+.form-card h3 { font-size: 1.5rem; margin-bottom: 0.5rem; }
+.form-card > p { font-size: 0.9rem; color: var(--text-light); margin-bottom: 2rem; }
+.form-group { margin-bottom: 1.25rem; }
+.form-group label { display: block; font-size: 0.88rem; font-weight: 600; color: var(--text-heading); margin-bottom: 0.4rem; }
+.form-group input, .form-group select, .form-group textarea {
+  width: 100%; padding: 0.8rem 1.1rem; border-radius: var(--radius-md);
+  border: 1px solid var(--border-color); background: var(--bg-card);
+  color: var(--text-heading); font-family: 'Manrope', sans-serif; font-size: 0.92rem;
+  transition: all var(--transition-fast); outline: none;
+}
+.form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+  border-color: var(--secondary-color); box-shadow: 0 0 0 3px rgba(25,183,198,0.1);
+}
+.form-group input.error, .form-group select.error, .form-group textarea.error {
+  border-color: #ef4444; box-shadow: 0 0 0 3px rgba(239,68,68,0.1);
+}
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+.checkbox-group { display: flex; align-items: flex-start; gap: 0.75rem; margin-bottom: 1.5rem; }
+.checkbox-group input { width: 18px; height: 18px; margin-top: 2px; cursor: pointer; accent-color: var(--secondary-color); }
+.checkbox-group label { font-size: 0.85rem; color: var(--text-body); cursor: pointer; margin: 0; }
+.form-btns { display: flex; gap: 1rem; }
+.btn-submit { min-width: 200px; }
+
+.success-msg {
+  display: none; text-align: center; padding: 3rem 2rem;
+}
+.success-msg .success-icon {
+  width: 72px; height: 72px; border-radius: var(--radius-full);
+  background: rgba(25,183,198,0.1); color: var(--secondary-color);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 2rem; margin: 0 auto 1.25rem;
+}
+.success-msg h4 { font-size: 1.5rem; margin-bottom: 0.5rem; }
+.success-msg p { color: var(--text-light); font-size: 0.95rem; }
+
+.form-side { display: flex; flex-direction: column; gap: 1.5rem; }
+.form-side-card {
+  background: var(--bg-card); border-radius: var(--radius-lg); padding: 2rem;
+  border: 1px solid var(--border-color); box-shadow: var(--shadow-sm);
+}
+.form-side-card h4 { font-size: 1.1rem; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem; }
+.form-side-card h4 i { color: var(--secondary-color); }
+.form-side-card ul { display: flex; flex-direction: column; gap: 0.75rem; }
+.form-side-card ul li { display: flex; align-items: center; gap: 0.75rem; font-size: 0.9rem; color: var(--text-body); }
+.form-side-card ul li i { color: var(--secondary-color); font-size: 0.8rem; width: 16px; }
+
+/* ============ SECTION 5: PRICING ============ */
+.pricing-section { background: var(--bg-section); }
+.pricing-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; align-items: start; }
+.pricing-card {
+  background: var(--bg-card); border-radius: var(--radius-lg); padding: 2.5rem 2rem;
+  border: 1px solid var(--border-color); box-shadow: var(--shadow-sm);
+  transition: all var(--transition-normal); position: relative; overflow: hidden;
+  display: flex; flex-direction: column;
+}
+.pricing-card:hover { transform: translateY(-8px); box-shadow: var(--shadow-lg); border-color: transparent; }
+.pricing-card::before {
+  content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 4px;
+  background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+  opacity: 0; transition: opacity var(--transition-fast);
+}
+.pricing-card:hover::before { opacity: 1; }
+
+.pricing-featured {
+  border: 2px solid var(--secondary-color); box-shadow: 0 12px 40px rgba(25,183,198,0.15);
+  transform: scale(1.03);
+}
+.pricing-featured:hover { transform: scale(1.03) translateY(-8px); }
+.pricing-featured::before { opacity: 1; }
+
+.pricing-badge {
+  position: absolute; top: 1.5rem; right: -2.5rem;
+  background: var(--secondary-color); color: #fff; padding: 0.35rem 3rem;
+  font-family: 'DM Sans', sans-serif; font-weight: 700; font-size: 0.8rem;
+  transform: rotate(45deg); box-shadow: 0 2px 10px rgba(25,183,198,0.3);
+  text-transform: uppercase; letter-spacing: 0.5px;
+}
+
+.pricing-header { text-align: center; margin-bottom: 2rem; }
+.pricing-header h3 { font-size: 1.5rem; margin-bottom: 0.75rem; }
+.pricing-price { font-size: 3rem; font-weight: 800; color: var(--text-heading); font-family: 'DM Sans', sans-serif; line-height: 1; margin-bottom: 0.5rem; }
+.pricing-price .currency { font-size: 1.5rem; vertical-align: super; font-weight: 700; }
+.pricing-price .period { font-size: 1rem; font-weight: 600; color: var(--text-light); }
+.pricing-header p { font-size: 0.9rem; color: var(--text-light); margin: 0; }
+
+.pricing-features { list-style: none; margin-bottom: 2rem; flex-grow: 1; }
+.pricing-features li {
+  display: flex; align-items: center; gap: 0.75rem; padding: 0.65rem 0;
+  font-size: 0.92rem; color: var(--text-body); border-bottom: 1px solid var(--border-color);
+}
+.pricing-features li:last-child { border-bottom: none; }
+.pricing-features li i { font-size: 0.9rem; width: 20px; }
+.pricing-features li i.fa-check { color: var(--secondary-color); }
+.pricing-features li i.fa-times { color: #ef4444; }
+.pricing-card .btn { width: 100%; margin-top: auto; }
+
+/* ============ SECTION 6: BENEFITS ============ */
+.benefits-section { background: var(--bg-light); }
+.benefits-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; }
+.benefit-card {
+  background: var(--bg-card); border-radius: var(--radius-lg); padding: 2.5rem 2rem;
+  border: 1px solid var(--border-color); box-shadow: var(--shadow-sm);
+  transition: all var(--transition-normal); text-align: center; position: relative; overflow: hidden;
+}
+.benefit-card::after {
+  content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 4px;
+  background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+  transform: scaleX(0); transform-origin: left; transition: transform var(--transition-normal);
+}
+.benefit-card:hover::after { transform: scaleX(1); }
+.benefit-card:hover { transform: translateY(-8px); box-shadow: var(--shadow-lg); border-color: transparent; }
+.benefit-icon-wrapper {
+  width: 72px; height: 72px; border-radius: var(--radius-md);
+  background: linear-gradient(135deg, rgba(11,79,140,0.08), rgba(25,183,198,0.08));
+  color: var(--secondary-color); display: flex; align-items: center; justify-content: center;
+  font-size: 1.75rem; margin: 0 auto 1.25rem; transition: all var(--transition-normal);
+}
+.benefit-card:hover .benefit-icon-wrapper {
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  color: #fff; transform: scale(1.1) rotate(-5deg);
+}
+.benefit-card h3 { font-size: 1.3rem; margin-bottom: 0.75rem; }
+.benefit-card p { font-size: 0.9rem; color: var(--text-light); line-height: 1.7; margin: 0; }
+
+/* ============ SECTION 7: CTA ============ */
+.cta-section-wrapper { background: var(--bg-section); }
+.booking-cta {
+  background: linear-gradient(135deg, var(--primary-color) 0%, #062b4e 100%);
+  border-radius: var(--radius-lg); padding: 4.5rem 3rem; text-align: center;
+  box-shadow: var(--shadow-lg); position: relative; overflow: hidden;
+}
+.booking-cta::before {
+  content: ''; position: absolute; top: -60%; left: -10%;
+  width: 500px; height: 500px; border-radius: 50%;
+  background: radial-gradient(circle, rgba(25,183,198,0.12) 0%, transparent 70%);
+  pointer-events: none;
+}
+.booking-cta::after {
+  content: ''; position: absolute; bottom: -40%; right: -10%;
+  width: 400px; height: 400px; border-radius: 50%;
+  background: radial-gradient(circle, rgba(255,200,87,0.08) 0%, transparent 70%);
+  pointer-events: none;
+}
+.booking-cta h3 { color: #fff; font-size: 2.75rem; margin-bottom: 1rem; position: relative; z-index: 1; }
+.booking-cta p { color: rgba(255,255,255,0.85); font-size: 1.15rem; max-width: 620px; margin: 0 auto 2.5rem; position: relative; z-index: 1; line-height: 1.7; }
+.booking-cta .cta-btns { display: flex; justify-content: center; gap: 1.25rem; flex-wrap: wrap; position: relative; z-index: 1; }
+.booking-cta .btn-outline-light {
+  display: inline-flex; align-items: center; justify-content: center; gap: 0.625rem;
+  padding: 0.9rem 2rem; font-family: 'Manrope', sans-serif; font-weight: 600; font-size: 1rem;
+  border-radius: var(--radius-full); cursor: pointer; transition: all var(--transition-normal);
+  background: transparent; border: 2px solid rgba(255,255,255,0.5); color: #fff;
+}
+.booking-cta .btn-outline-light:hover { background: #fff; color: var(--primary-color); border-color: #fff; transform: translateY(-3px); }
+
+/* ============ FORM VALIDATION STYLES ============ */
+.form-group .error-message {
+  display: none; font-size: 0.8rem; color: #ef4444; margin-top: 0.35rem;
+}
+.form-group input.error + .error-message,
+.form-group select.error + .error-message,
+.form-group textarea.error + .error-message { display: block; }
+.checkbox-group input.error { outline: 2px solid #ef4444; outline-offset: 2px; border-radius: 2px; }
+
+/* ============ RESPONSIVE ============ */
+@media (max-width: 1200px) {
+  .programs-grid { grid-template-columns: repeat(2, 1fr); }
+  .schedule-grid { grid-template-columns: repeat(2, 1fr); }
+  .pricing-grid { grid-template-columns: repeat(2, 1fr); }
+  .pricing-featured { transform: scale(1); }
+  .pricing-featured:hover { transform: translateY(-8px); }
+  .pricing-card:last-child { grid-column: 1 / -1; max-width: 400px; margin: 0 auto; }
+}
+
+@media (max-width: 1024px) {
+  .booking-hero h1 { font-size: 3rem; }
+  .form-wrapper { grid-template-columns: 1fr; gap: 2.5rem; }
+  .benefits-grid { grid-template-columns: repeat(2, 1fr); }
+  .booking-cta h3 { font-size: 2.25rem; }
+}
+
+@media (max-width: 768px) {
+  .booking-hero { min-height: 55vh; }
+  .booking-hero h1 { font-size: 2.5rem; }
+  .booking-hero p { font-size: 1rem; }
+  .booking-hero-btns { flex-direction: column; align-items: center; }
+  .booking-hero-btns .btn { width: 100%; max-width: 320px; }
+  .programs-grid { grid-template-columns: 1fr; max-width: 420px; margin: 0 auto; }
+  .schedule-grid { grid-template-columns: 1fr; max-width: 420px; margin: 0 auto; }
+  .pricing-grid { grid-template-columns: 1fr; max-width: 400px; margin: 0 auto; }
+  .pricing-card:last-child { grid-column: auto; max-width: none; }
+  .benefits-grid { grid-template-columns: 1fr; max-width: 420px; margin: 0 auto; }
+  .form-card { padding: 1.75rem; }
+  .form-row { grid-template-columns: 1fr; }
+  .form-btns { flex-direction: column; }
+  .form-btns .btn { width: 100%; }
+  .btn-submit { min-width: unset; }
+  .booking-cta { padding: 3rem 1.5rem; }
+  .booking-cta h3 { font-size: 1.75rem; }
+  .booking-cta .cta-btns .btn,
+  .booking-cta .cta-btns .btn-outline-light { width: 100%; }
+}
+
+@media (max-width: 480px) {
+  .booking-hero h1 { font-size: 2rem; }
+  .booking-hero .breadcrumb { font-size: 0.8rem; padding: 0.4rem 1rem; }
+  .booking-program-card .program-img { height: 180px; }
+  .schedule-card { padding: 1.5rem 1.25rem; }
+  .pricing-card { padding: 2rem 1.5rem; }
+  .pricing-price { font-size: 2.5rem; }
+  .benefit-card { padding: 2rem 1.5rem; }
+  .benefit-icon-wrapper { width: 60px; height: 60px; font-size: 1.4rem; }
+  .booking-cta h3 { font-size: 1.5rem; }
+  .form-side-card { padding: 1.5rem; }
+}
+
+@media (max-width: 360px) {
+  .booking-hero h1 { font-size: 1.75rem; }
+  .booking-hero-btns .btn { font-size: 0.9rem; }
+}
+
+@media (max-width: 320px) {
+  .booking-hero h1 { font-size: 1.5rem; }
+  .booking-hero p { font-size: 0.85rem; }
+  .booking-program-card .program-meta { gap: 0.5rem; font-size: 0.75rem; }
+  .schedule-detail { flex-direction: column; gap: 0.25rem; }
+  .schedule-card h3 { font-size: 1rem; }
+  .pricing-card h3 { font-size: 1.25rem; }
+  .pricing-price { font-size: 2rem; }
+  .pricing-price .period { font-size: 0.85rem; }
+  .benefit-card h3 { font-size: 1.1rem; }
+  .benefit-card p { font-size: 0.82rem; }
+  .booking-cta { padding: 2rem 1.25rem; }
+  .booking-cta h3 { font-size: 1.25rem; }
+  .booking-cta p { font-size: 0.85rem; }
+  .form-card { padding: 1.25rem; }
+  .form-card h3 { font-size: 1.15rem; }
+  .form-group label { font-size: 0.8rem; }
+  .form-group input, .form-group select, .form-group textarea { font-size: 0.8rem; padding: 0.6rem 0.85rem; }
+}

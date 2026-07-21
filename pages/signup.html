@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Create your AquaRise account and start your swimming journey with world-class coaching and premium facilities.">
+  <title>Sign Up – AquaRise Aquatic Center</title>
+  <link rel="icon" type="image/svg+xml" href="../assets/favicon/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="../css/themes.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/signup.css">
+  <link rel="stylesheet" href="../css/rtl.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+  <style>
+    .theme-floating { position: fixed; top: 1.5rem; inset-inline-end: 1.5rem; z-index: 100; display: flex; gap: 0.5rem; }
+    .floating-logo { position: absolute; top: 1.5rem; inset-inline-start: 1.5rem; z-index: 1000; display: flex; align-items: center; gap: 0.5rem; text-decoration: none; }
+  </style>
+</head>
+<body>
+
+  <!-- Floating Logo -->
+  <a href="../index.html" class="floating-logo">
+    <img src="../assets/favicon/favicon.svg" alt="AquaRise Logo" style="height: 40px; width: auto;">
+    <span style="font-size: 1.5rem; font-weight: 700; color: var(--text-heading); font-family: 'DM Sans', sans-serif;">AquaRise</span>
+  </a>
+  <div class="theme-floating">
+    <button class="theme-toggle btn" id="theme-toggle" aria-label="Toggle Dark Mode" style="width:40px; height:40px; border-radius:50%; display:flex; align-items:center; justify-content:center; background:var(--surface-color); color:var(--text-color); border:1px solid var(--border-color); padding:0;"><i class="fas fa-moon"></i></button>
+    <button class="rtl-toggle btn" id="rtl-toggle" aria-label="Toggle RTL" style="width:40px; height:40px; border-radius:50%; display:flex; align-items:center; justify-content:center; background:var(--surface-color); color:var(--text-color); border:1px solid var(--border-color); padding: 0; font-weight:600; font-size:0.75rem;">RTL</button>
+  </div>
+
+  <!-- ============ HEADER ============ -->
+  
+
+  <main>
+    <!-- ============ SECTION 1: HERO ============ -->
+    <section class="signup-hero section-padding">
+      <div class="signup-hero-bg">
+        <img src="../assets/images/hero_pool.png" alt="Olympic Swimming Pool">
+      </div>
+      <div class="signup-hero-overlay"></div>
+      <div class="container">
+        <div class="breadcrumb">
+          <a href="../index.html">Home</a>
+          <i class="fas fa-chevron-right"></i>
+          <span>Sign Up</span>
+        </div>
+        <h1>Join the <span>AquaRise</span> Family</h1>
+        <p>Create your account and embark on an extraordinary swimming journey with world-class coaching and premium facilities.</p>
+      </div>
+    </section>
+
+    <!-- ============ SECTION 2 & 3: SPLIT REGISTRATION ============ -->
+    <section class="signup-split section-padding" id="register-section">
+      <div class="container">
+        <div class="split-wrapper">
+          <div class="signup-image-panel reveal-left">
+            <img src="../assets/images/facility.png" alt="AquaRise Premium Facility">
+            <div class="signup-image-overlay"></div>
+            <div class="signup-image-content">
+              <h3>Start Your Journey</h3>
+              <p>Join thousands of swimmers who have transformed their lives at AquaRise.</p>
+              <div class="signup-image-stats">
+                <div class="signup-stat">
+                  <div class="stat-number">5000+</div>
+                  <div class="stat-label">Students</div>
+                </div>
+                <div class="signup-stat">
+                  <div class="stat-number">25</div>
+                  <div class="stat-label">Coaches</div>
+                </div>
+                <div class="signup-stat">
+                  <div class="stat-number">15+</div>
+                  <div class="stat-label">Years</div>
+                </div>
+                <div class="signup-stat">
+                  <div class="stat-number">100+</div>
+                  <div class="stat-label">Championships</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="register-card reveal-right" id="form-content">
+            <div class="register-header">
+              <div class="register-icon"><i class="fas fa-user-plus"></i></div>
+              <h3>Create Account</h3>
+              <p>Fill in your details to register</p>
+            </div>
+            <form class="register-form" id="register-form" novalidate data-no-global-validate>
+              <div class="form-row-2">
+                <div class="form-group">
+                  <label for="reg-name">Full Name *</label>
+                  <div class="input-wrapper">
+                    <input type="text" id="reg-name" name="name" placeholder="John Doe" required>
+                  </div>
+                  <div class="field-error" id="name-error"></div>
+                </div>
+                <div class="form-group">
+                  <label for="reg-email">Email Address *</label>
+                  <div class="input-wrapper">
+                    <input type="email" id="reg-email" name="email" placeholder="john@example.com" required>
+                  </div>
+                  <div class="field-error" id="email-error"></div>
+                </div>
+              </div>
+              <div class="form-row-2">
+                <div class="form-group">
+                  <label for="reg-phone">Phone Number *</label>
+                  <div class="input-wrapper">
+                    <input type="tel" id="reg-phone" name="phone" placeholder="+1 (800) 555-SWIM" required>
+                  </div>
+                  <div class="field-error" id="phone-error"></div>
+                </div>
+                <div class="form-group">
+                  <label for="reg-age">Age *</label>
+                  <div class="input-wrapper">
+                    <input type="number" id="reg-age" name="age" placeholder="e.g. 12" min="3" max="100" required>
+                  </div>
+                  <div class="field-error" id="age-error"></div>
+                </div>
+              </div>
+              <div class="form-row-2">
+                <div class="form-group">
+                  <label for="reg-gender">Gender</label>
+                  <div class="input-wrapper">
+                    <select id="reg-gender" name="gender">
+                      <option value="">Select Gender</option>
+                      <option value="male">Male</option>
+                      <option value="female">Female</option>
+                      <option value="other">Other</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="reg-program">Select Program *</label>
+                  <div class="input-wrapper">
+                    <select id="reg-program" name="program" required>
+                      <option value="">Choose Program</option>
+                      <option value="beginner">Beginner</option>
+                      <option value="intermediate">Intermediate</option>
+                      <option value="advanced">Advanced</option>
+                      <option value="competitive">Competitive</option>
+                    </select>
+                  </div>
+                  <div class="field-error" id="program-error"></div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="reg-batch">Preferred Batch</label>
+                <div class="input-wrapper">
+                  <select id="reg-batch" name="batch">
+                    <option value="">Select Batch</option>
+                    <option value="morning">Morning (06:00 - 09:00)</option>
+                    <option value="evening">Evening (16:00 - 18:00)</option>
+                    <option value="weekend">Weekend (07:00 - 12:00)</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-row-2">
+                <div class="form-group">
+                  <label for="reg-password">Password *</label>
+                  <div class="input-wrapper">
+                    <input type="password" id="reg-password" name="password" placeholder="Create a strong password" required autocomplete="new-password">
+                    <button type="button" class="toggle-password fas fa-eye" aria-label="Toggle password visibility"></button>
+                  </div>
+                  <div class="password-strength">
+                    <span class="strength-bar"></span>
+                    <span class="strength-bar"></span>
+                    <span class="strength-bar"></span>
+                  </div>
+                  <div class="strength-text" id="strength-text"></div>
+                  <div class="field-error" id="password-error"></div>
+                </div>
+                <div class="form-group">
+                  <label for="reg-confirm">Confirm Password *</label>
+                  <div class="input-wrapper">
+                    <input type="password" id="reg-confirm" name="confirm" placeholder="Re-enter password" required autocomplete="new-password">
+                    <button type="button" class="toggle-password fas fa-eye" aria-label="Toggle password visibility"></button>
+                  </div>
+                  <div class="field-error" id="confirm-error"></div>
+                </div>
+              </div>
+              <div class="checkbox-group" id="terms-group">
+                <input type="checkbox" id="agree-terms" name="agree-terms" required>
+                <label for="agree-terms">I agree to the <a href="terms-condition.html" style="color:var(--secondary-color);">Terms &amp; Conditions</a> and <a href="privacy-policy.html" style="color:var(--secondary-color);">Privacy Policy</a> *</label>
+              </div>
+              <div class="field-error" id="terms-error" style="margin-top:-0.75rem;margin-bottom:1rem;"></div>
+              <button type="submit" class="signup-btn"><i class="fas fa-user-plus"></i> Create Account</button>
+              <div class="form-divider"><span>Already registered?</span></div>
+              <p class="login-link-text">Already have an account? <a href="login.html">Sign In</a></p>
+            </form>
+            <div class="signup-success" id="signup-success">
+              <div class="success-icon"><i class="fas fa-check-circle"></i></div>
+              <h4>Welcome to AquaRise!</h4>
+              <p>Your account has been created successfully. Check your email to verify and complete your registration.</p>
+              <a href="login.html" class="signup-btn" style="width:auto;display:inline-flex;"><i class="fas fa-sign-in-alt"></i> Sign In Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SECTION 5: WHY JOIN ============ -->
+    <section class="why-section section-padding">
+      <div class="container">
+        <div class="text-center">
+          <span class="section-tag">Why Choose Us</span>
+          <h2 class="section-title">Why Join AquaRise</h2>
+          <p class="section-subtitle">Experience the difference of premium aquatic training</p>
+        </div>
+        <div class="why-grid">
+          <div class="why-card reveal">
+            <div class="why-icon"><i class="fas fa-certificate"></i></div>
+            <h4>Certified Coaches</h4>
+            <p>Learn from internationally certified professionals with years of competitive coaching experience.</p>
+          </div>
+          <div class="why-card reveal">
+            <div class="why-icon"><i class="fas fa-swimmer"></i></div>
+            <h4>Olympic Standard Pool</h4>
+            <p>Train in a state-of-the-art heated Olympic-size pool with advanced filtration and timing systems.</p>
+          </div>
+          <div class="why-card reveal">
+            <div class="why-icon"><i class="fas fa-clock"></i></div>
+            <h4>Flexible Batch Timings</h4>
+            <p>Choose from morning, evening, and weekend batches that fit seamlessly into your schedule.</p>
+          </div>
+          <div class="why-card reveal">
+            <div class="why-icon"><i class="fas fa-trophy"></i></div>
+            <h4>National Level Training</h4>
+            <p>Prepare for state and national competitions with structured training regimens and mock meets.</p>
+          </div>
+          <div class="why-card reveal">
+            <div class="why-icon"><i class="fas fa-shield-alt"></i></div>
+            <h4>Safe Learning Environment</h4>
+            <p>Enjoy complete peace of mind with lifeguards, first-aid trained staff, and modern safety equipment.</p>
+          </div>
+          <div class="why-card reveal">
+            <div class="why-icon"><i class="fas fa-chalkboard-teacher"></i></div>
+            <h4>Professional Guidance</h4>
+            <p>Receive personalized feedback and progress tracking from dedicated mentors throughout your journey.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SECTION 6: MEMBER BENEFITS ============ -->
+    <section class="benefits-section section-padding">
+      <div class="container">
+        <div class="text-center">
+          <span class="section-tag">Perks</span>
+          <h2 class="section-title">Member Benefits</h2>
+          <p class="section-subtitle">Exclusive advantages for every AquaRise member</p>
+        </div>
+        <div class="benefits-grid">
+          <div class="benefit-card reveal">
+            <div class="benefit-icon"><i class="fas fa-chart-line"></i></div>
+            <h4>Training Progress</h4>
+            <p>Track your swim times, technique improvements, and milestone achievements with detailed analytics.</p>
+          </div>
+          <div class="benefit-card reveal">
+            <div class="benefit-icon"><i class="fas fa-award"></i></div>
+            <h4>Digital Certificates</h4>
+            <p>Receive verified digital certificates for level completions, achievements, and competition participation.</p>
+          </div>
+          <div class="benefit-card reveal">
+            <div class="benefit-icon"><i class="fas fa-medal"></i></div>
+            <h4>Competition Opportunities</h4>
+            <p>Participate in academy meets, inter-school championships, and national swimming tournaments.</p>
+          </div>
+          <div class="benefit-card reveal">
+            <div class="benefit-icon"><i class="fas fa-users"></i></div>
+            <h4>Swimming Community</h4>
+            <p>Connect with fellow swimmers, share experiences, and build lasting friendships in our aquatic family.</p>
+          </div>
+          <div class="benefit-card reveal">
+            <div class="benefit-icon"><i class="fas fa-calendar-check"></i></div>
+            <h4>Priority Enrollment</h4>
+            <p>Enjoy early access to batch bookings, special workshops, and seasonal programs before general registration.</p>
+          </div>
+          <div class="benefit-card reveal">
+            <div class="benefit-icon"><i class="fas fa-flask"></i></div>
+            <h4>Special Workshops</h4>
+            <p>Attend exclusive workshops on nutrition, mental conditioning, injury prevention, and advanced techniques.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SECTION 7: CTA ============ -->
+    <section class="signup-cta-section section-padding">
+      <div class="container">
+        <div class="signup-cta-card reveal">
+          <h3>Start Your Swimming Journey Today</h3>
+          <p>Join AquaRise and unlock your full potential with world-class coaching, premium facilities, and a community that champions your success.</p>
+          <div class="cta-btns">
+            <a href="services.html" class="btn btn-primary"><i class="fas fa-swimmer"></i> Explore Programs</a>
+            <a href="contact.html" class="btn-outline-light"><i class="fas fa-headset"></i> Contact Us</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to Top"><i class="fas fa-arrow-up"></i></button>
+
+  <script src="../js/theme.js"></script>
+  <script src="../js/rtl.js"></script>
+  <script src="../js/validation.js"></script>
+  <script src="../js/main.js"></script>
+  <script src="../js/signup.js"></script>
+</body>
+</html>
+

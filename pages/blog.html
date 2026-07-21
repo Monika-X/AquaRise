@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog – AquaRise Swimming Academy & Aquatic Center</title>
+  <meta name="description" content="Dive into AquaRise's swimming blog featuring expert tips, training guides, academy news, nutrition advice, and water safety articles.">
+  <link rel="icon" type="image/svg+xml" href="../assets/favicon/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <link rel="stylesheet" href="../css/themes.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/blog.css">
+  <link rel="stylesheet" href="../css/rtl.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+
+  <!-- STICKY HEADER -->
+  <header class="header">
+    <div class="container header-container">
+      <a href="../index.html" class="logo">
+        <img src="../assets/favicon/favicon.svg" alt="AquaRise Logo">
+        <span>Aqua</span>Rise
+      </a>
+      <nav class="nav-menu" id="nav-menu">
+        <a href="../index.html" class="nav-link">Home</a>
+        <a href="home2.html" class="nav-link">Home2</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="gallery.html" class="nav-link">Gallery</a>
+        <a href="blog.html" class="nav-link">Blog</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+
+      
+        <a href="booking.html" class="nav-link mobile-only btn-mobile-trial">Book Trial</a>
+      </nav>
+      <div class="header-controls">
+        <div class="user-profile">
+          <button class="control-btn user-btn" aria-label="User Profile"><i class="fas fa-user"></i></button>
+          <div class="user-dropdown">
+            <a href="login.html"><i class="fas fa-sign-in-alt"></i> Login</a>
+            <a href="signup.html"><i class="fas fa-user-plus"></i> Sign Up</a>
+          </div>
+        </div>
+        <button id="theme-toggle" class="control-btn" aria-label="Toggle Theme"><i class="fas fa-moon"></i></button>
+        <button id="rtl-toggle" class="control-btn" aria-label="Toggle RTL">RTL</button>
+        <a href="booking.html" class="btn btn-primary">Book Trial</a>
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Menu"><i class="fas fa-bars"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ============================================================ -->
+    <!-- SECTION 1: HERO BANNER                                      -->
+    <!-- ============================================================ -->
+    <section class="blog-hero">
+      <div class="blog-hero-bg">
+        <img src="../assets/images/hero_pool.png" alt="AquaRise Pool">
+      </div>
+      <div class="blog-hero-overlay"></div>
+      <div class="container">
+        <div class="breadcrumb reveal">
+          <a href="../index.html">Home</a>
+          <i class="fas fa-chevron-right"></i>
+          <span>Blog</span>
+        </div>
+        <h1 class="reveal" style="transition-delay:0.1s">Swimming Tips, Training Guides<br><span>& Academy News</span></h1>
+        <p class="reveal" style="transition-delay:0.2s">Expert advice from our coaches, latest academy updates, and everything you need to elevate your swimming journey.</p>
+        <a href="#" class="btn btn-primary reveal" id="explore-articles-btn" style="transition-delay:0.3s"><i class="fas fa-book-open"></i> Explore Articles</a>
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SECTION 2: FEATURED ARTICLE                                 -->
+    <!-- ============================================================ -->
+    <section class="section-padding featured-section">
+      <div class="container">
+        <div class="text-center">
+          <span class="section-tag reveal"><i class="fas fa-star"></i> Editor's Pick</span>
+          <h2 class="section-title reveal">Featured Article</h2>
+          <p class="section-subtitle reveal">Handpicked by our editorial team for its depth, insight, and practical swimming wisdom.</p>
+        </div>
+
+        <div class="featured-card reveal">
+          <div class="featured-image">
+            <img src="https://i.pinimg.com/1200x/8d/e4/c3/8de4c377ed804d6d833e6efeb04051e7.jpg" alt="Perfect Freestyle Technique">
+            <span class="featured-badge">Featured</span>
+          </div>
+          <div class="featured-content">
+            <div class="featured-meta">
+              <span><i class="fas fa-user"></i> David Miller</span>
+              <span><i class="far fa-calendar"></i> July 18, 2026</span>
+              <span><i class="far fa-clock"></i> 8 min read</span>
+            </div>
+            <h2>Master the Perfect Freestyle: A Comprehensive Stroke Guide</h2>
+            <p>Olympic gold medalist and AquaRise head coach David Miller breaks down the perfect freestyle stroke into six actionable phases. From hand entry to hip rotation, every detail is covered to help you swim faster with less effort. This guide includes dry-land drills, common mistakes to avoid, and a progressive training plan used by national-level swimmers.</p>
+            <a href="#" class="btn btn-primary read-more-btn"><i class="fas fa-arrow-right"></i> Read Full Article</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SECTION 3: LATEST ARTICLES + SIDEBAR                        -->
+    <!-- ============================================================ -->
+    <section class="section-padding articles-section" id="latest-articles">
+      <div class="container">
+        <div class="text-center">
+          <span class="section-tag reveal"><i class="fas fa-newspaper"></i> Fresh Content</span>
+          <h2 class="section-title reveal">Latest Articles</h2>
+          <p class="section-subtitle reveal">Stay updated with the latest swimming tips, training insights, and academy stories.</p>
+        </div>
+
+        <div class="blog-layout">
+          <div class="articles-grid">
+            <div class="blog-card reveal" style="transition-delay:0.05s">
+              <div class="blog-card-img">
+                <img src="https://images.unsplash.com/photo-1530549387789-4c1017266635?auto=format&fit=crop&w=600&q=80" alt="Beginner Swimming Tips">
+                <span class="blog-cat">Swimming Basics</span>
+              </div>
+              <div class="blog-card-body">
+                <span style="display:none;">Triathlon Coaching</span>
+                <div class="blog-date">July 14, 2026</div>
+                <h3>10 Essential Beginner Swimming Tips for Adults</h3>
+                <p>Starting swimming as an adult can be daunting. Our coaches share practical advice to build confidence and progress quickly.</p>
+                <a href="#" class="btn btn-secondary read-more-btn" style="width:100%;">Read More</a>
+              </div>
+            </div>
+
+            <div class="blog-card reveal" style="transition-delay:0.15s">
+              <div class="blog-card-img">
+                <img src="https://i.pinimg.com/1200x/8a/fc/f0/8afcf00ee8d1287b01b8d6932f23214c.jpg" alt="Freestyle Technique">
+                <span class="blog-cat">Technique</span>
+              </div>
+              <div class="blog-card-body">
+                <span style="display:none;">Butterfly Endurance Coaching</span>
+                <div class="blog-date">July 11, 2026</div>
+                <h3>Perfect Freestyle Technique: Arm Pull Mechanics</h3>
+                <p>Learn the high-elbow catch and S-pull pattern that elite swimmers use to maximize propulsion with minimal effort.</p>
+                <a href="#" class="btn btn-secondary read-more-btn" style="width:100%;">Read More</a>
+              </div>
+            </div>
+
+            <div class="blog-card reveal" style="transition-delay:0.25s">
+              <div class="blog-card-img">
+                <img src="https://images.unsplash.com/photo-1600965962361-9035dbfd1c50?auto=format&fit=crop&w=600&q=80" alt="Swimming for Weight Loss">
+                <span class="blog-cat">Fitness</span>
+              </div>
+              <div class="blog-card-body">
+                <span style="display:none;">Endurance Nutrition</span>
+                <div class="blog-date">July 7, 2026</div>
+                <h3>Why Swimming is the Ultimate Full-Body Workout</h3>
+                <p>Discover how swimming burns calories, builds lean muscle, and improves cardiovascular health better than most land exercises.</p>
+                <a href="#" class="btn btn-secondary read-more-btn" style="width:100%;">Read More</a>
+              </div>
+            </div>
+
+            <div class="blog-card reveal" style="transition-delay:0.35s">
+              <div class="blog-card-img">
+                <img src="../assets/images/hero_pool.png" alt="Pool Safety Tips">
+                <span class="blog-cat">Water Safety</span>
+              </div>
+              <div class="blog-card-body">
+                <span style="display:none;">Open Water</span>
+                <div class="blog-date">July 3, 2026</div>
+                <h3>Essential Pool Safety Guidelines Every Parent Should Know</h3>
+                <p>From supervision rules to emergency preparedness, equip your family with these critical water safety practices.</p>
+                <a href="#" class="btn btn-secondary read-more-btn" style="width:100%;">Read More</a>
+              </div>
+            </div>
+
+            <div class="blog-card reveal" style="transition-delay:0.45s">
+              <div class="blog-card-img">
+                <img src="https://images.unsplash.com/photo-1519315901367-f34ff9154487?auto=format&fit=crop&w=600&q=80" alt="Benefits of Swimming">
+                <span class="blog-cat">Wellness</span>
+              </div>
+              <div class="blog-card-body">
+                <span style="display:none;">Nutrition</span>
+                <div class="blog-date">June 28, 2026</div>
+                <h3>7 Surprising Mental Health Benefits of Regular Swimming</h3>
+                <p>Beyond physical fitness, swimming reduces anxiety, improves sleep, and boosts cognitive function. Here's the science.</p>
+                <a href="#" class="btn btn-secondary read-more-btn" style="width:100%;">Read More</a>
+              </div>
+            </div>
+
+            <div class="blog-card reveal" style="transition-delay:0.55s">
+              <div class="blog-card-img">
+                <img src="https://images.unsplash.com/photo-1530549387789-4c1017266635?auto=format&fit=crop&w=600&q=80" alt="Improve Breathing">
+                <span class="blog-cat">Technique</span>
+              </div>
+              <div class="blog-card-body">
+                <span style="display:none;">Open Water Triathlon</span>
+                <div class="blog-date">June 24, 2026</div>
+                <h3>How to Improve Breathing Technique for Longer Swims</h3>
+                <p>Master bilateral breathing, exhalation patterns, and rhythmic timing to swim longer distances without fatigue.</p>
+                <a href="#" class="btn btn-secondary read-more-btn" style="width:100%;">Read More</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- SIDEBAR -->
+          <aside class="blog-sidebar">
+            <div class="sidebar-widget reveal">
+              <form class="sidebar-search" id="sidebar-search-form" data-no-global-validate>
+                <input type="text" id="sidebar-search-input" placeholder="Search articles..." aria-label="Search">
+                <button type="submit" aria-label="Submit search"><i class="fas fa-search"></i></button>
+              </form>
+            </div>
+
+            <div class="sidebar-widget reveal" style="transition-delay:0.1s">
+              <h4>Popular Posts</h4>
+              <div class="sidebar-posts">
+                <div class="sidebar-post">
+                  <div class="sp-img"><img src="https://i.pinimg.com/736x/c1/d4/bd/c1d4bd73f6a8fabca995a7386d974abb.jpg" alt="Post"></div>
+                  <div class="sp-content">
+                    <div class="sp-title">Master the Perfect Freestyle Stroke</div>
+                    <div class="sp-date">July 18, 2026</div>
+                  </div>
+                </div>
+                <div class="sidebar-post">
+                  <div class="sp-img"><img src="https://images.unsplash.com/photo-1530549387789-4c1017266635?auto=format&fit=crop&w=100&q=80" alt="Post"></div>
+                  <div class="sp-content">
+                    <div class="sp-title">10 Beginner Swimming Tips for Adults</div>
+                    <div class="sp-date">July 14, 2026</div>
+                  </div>
+                </div>
+                <div class="sidebar-post">
+                  <div class="sp-img"><img src="https://images.unsplash.com/photo-1600965962361-9035dbfd1c50?auto=format&fit=crop&w=100&q=80" alt="Post"></div>
+                  <div class="sp-content">
+                    <div class="sp-title">Why Swimming is the Ultimate Workout</div>
+                    <div class="sp-date">July 7, 2026</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="sidebar-widget reveal" style="transition-delay:0.2s">
+              <h4>Categories</h4>
+              <ul class="sidebar-categories">
+                <li><a href="#">Swimming Basics</a><span class="cat-count">12</span></li>
+                <li><a href="#">Fitness Swimming</a><span class="cat-count">8</span></li>
+                <li><a href="#">Competition Training</a><span class="cat-count">6</span></li>
+                <li><a href="#">Kids Swimming</a><span class="cat-count">10</span></li>
+                <li><a href="#">Nutrition</a><span class="cat-count">5</span></li>
+                <li><a href="#">Water Safety</a><span class="cat-count">7</span></li>
+              </ul>
+            </div>
+
+            <div class="sidebar-widget reveal" style="transition-delay:0.3s">
+              <h4>Popular Tags</h4>
+              <div class="sidebar-tags">
+                <a href="#">Freestyle</a>
+                <a href="#">Breathing</a>
+                <a href="#">Endurance</a>
+                <a href="#">Coaching</a>
+                <a href="#">Safety</a>
+                <a href="#">Nutrition</a>
+                <a href="#">Butterfly</a>
+                <a href="#">Open Water</a>
+                <a href="#">Triathlon</a>
+              </div>
+            </div>
+
+            <div class="sidebar-widget reveal" style="transition-delay:0.4s">
+              <h4>Follow Us</h4>
+              <div class="sidebar-social">
+                <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="https://youtube.com" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SECTION 4: SWIMMING CATEGORIES                              -->
+    <!-- ============================================================ -->
+    <section class="section-padding blog-categories-section">
+      <div class="container">
+        <div class="text-center">
+          <span class="section-tag reveal"><i class="fas fa-layer-group"></i> Explore Topics</span>
+          <h2 class="section-title reveal">Swimming Categories</h2>
+          <p class="section-subtitle reveal">Dive deep into the topics that matter most to your swimming journey.</p>
+        </div>
+
+        <div class="blog-cat-grid">
+          <div class="blog-cat-card reveal" style="transition-delay:0.05s">
+            <div class="cat-icon"><i class="fas fa-water"></i></div>
+            <div>
+              <h4>Swimming Basics</h4>
+              <p>Fundamental techniques and water confidence for beginners.</p>
+              <div class="cat-count">12 Articles</div>
+            </div>
+          </div>
+          <div class="blog-cat-card reveal" style="transition-delay:0.15s">
+            <div class="cat-icon"><i class="fas fa-heartbeat"></i></div>
+            <div>
+              <h4>Fitness Swimming</h4>
+              <p>Workout plans, cardio tips, and strength training in water.</p>
+              <div class="cat-count">8 Articles</div>
+            </div>
+          </div>
+          <div class="blog-cat-card reveal" style="transition-delay:0.25s">
+            <div class="cat-icon"><i class="fas fa-trophy"></i></div>
+            <div>
+              <h4>Competition Training</h4>
+              <p>Race strategies, drills, and mental preparation for meets.</p>
+              <div class="cat-count">6 Articles</div>
+            </div>
+          </div>
+          <div class="blog-cat-card reveal" style="transition-delay:0.35s">
+            <div class="cat-icon"><i class="fas fa-child"></i></div>
+            <div>
+              <h4>Kids Swimming</h4>
+              <p>Age-appropriate lessons, safety tips, and fun aquatic activities.</p>
+              <div class="cat-count">10 Articles</div>
+            </div>
+          </div>
+          <div class="blog-cat-card reveal" style="transition-delay:0.45s">
+            <div class="cat-icon"><i class="fas fa-apple-alt"></i></div>
+            <div>
+              <h4>Nutrition</h4>
+              <p>Meal plans, hydration, and supplements for swimmers.</p>
+              <div class="cat-count">5 Articles</div>
+            </div>
+          </div>
+          <div class="blog-cat-card reveal" style="transition-delay:0.55s">
+            <div class="cat-icon"><i class="fas fa-shield-alt"></i></div>
+            <div>
+              <h4>Water Safety</h4>
+              <p>Pool rules, lifesaving skills, and emergency preparedness.</p>
+              <div class="cat-count">7 Articles</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SECTION 5: EXPERT TIPS                                      -->
+    <!-- ============================================================ -->
+    <section class="section-padding expert-section">
+      <div class="container">
+        <div class="text-center">
+          <span class="section-tag reveal"><i class="fas fa-lightbulb"></i> Pro Advice</span>
+          <h2 class="section-title reveal">Expert Tips from Our Coaches</h2>
+          <p class="section-subtitle reveal">Quick actionable advice used by AquaRise coaches to help swimmers at every level improve faster.</p>
+        </div>
+
+        <div class="expert-wrapper">
+          <div class="expert-image reveal-left">
+            <img src="../assets/images/coach.png" alt="AquaRise Coach">
+          </div>
+          <div class="reveal-right">
+            <div class="expert-tips">
+              <div class="expert-tip">
+                <div class="tip-icon"><i class="fas fa-running"></i></div>
+                <div>
+                  <h4>Warm-up Routine</h4>
+                  <p>Dynamic stretches and light swimming to activate muscles before intense sets.</p>
+                </div>
+              </div>
+              <div class="expert-tip">
+                <div class="tip-icon"><i class="fas fa-chart-line"></i></div>
+                <div>
+                  <h4>Stroke Improvement</h4>
+                  <p>Focus on high-elbow catch and early vertical forearm for better propulsion.</p>
+                </div>
+              </div>
+              <div class="expert-tip">
+                <div class="tip-icon"><i class="fas fa-lungs"></i></div>
+                <div>
+                  <h4>Breathing Technique</h4>
+                  <p>Practice bilateral breathing to balance your stroke and improve oxygen flow.</p>
+                </div>
+              </div>
+              <div class="expert-tip">
+                <div class="tip-icon"><i class="fas fa-bed"></i></div>
+                <div>
+                  <h4>Recovery Tips</h4>
+                  <p>Active recovery swims, stretching, and adequate sleep for muscle repair.</p>
+                </div>
+              </div>
+              <div class="expert-tip">
+                <div class="tip-icon"><i class="fas fa-tint"></i></div>
+                <div>
+                  <h4>Hydration</h4>
+                  <p>Drink water before, during, and after practice even in the pool environment.</p>
+                </div>
+              </div>
+              <div class="expert-tip">
+                <div class="tip-icon"><i class="fas fa-apple-alt"></i></div>
+                <div>
+                  <h4>Nutrition</h4>
+                  <p>Balanced meals with protein and complex carbs within 30 minutes post-swim.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SECTION 6: ACADEMY NEWS & EVENTS                            -->
+    <!-- ============================================================ -->
+    <section class="section-padding news-section">
+      <div class="container">
+        <div class="text-center">
+          <span class="section-tag reveal"><i class="fas fa-calendar-alt"></i> Happening Now</span>
+          <h2 class="section-title reveal">Academy News & Events</h2>
+          <p class="section-subtitle reveal">Stay informed about upcoming events, new programs, and academy milestones.</p>
+        </div>
+
+        <div class="news-grid">
+          <div class="news-card reveal" style="transition-delay:0.05s">
+            <div class="news-card-img">
+              <img src="https://images.unsplash.com/photo-1530549387789-4c1017266635?auto=format&fit=crop&w=600&q=80" alt="Summer Camp">
+            </div>
+            <div class="news-card-body">
+                <span style="display:none;">Endurance Coaching</span>
+              <div class="news-date-loc">
+                <span><i class="far fa-calendar"></i> Aug 1-28, 2026</span>
+                <span><i class="fas fa-map-marker-alt"></i> Main Pool</span>
+              </div>
+              <h4>Summer Swimming Camp</h4>
+              <p>Intensive 4-week summer program with daily training, games, and water sports for ages 6-16.</p>
+            </div>
+          </div>
+
+          <div class="news-card reveal" style="transition-delay:0.15s">
+            <div class="news-card-img">
+              <img src="https://i.pinimg.com/1200x/d9/70/a6/d970a64eaafc9fe8cfb0310a757fc1bb.jpg" alt="National Championship">
+            </div>
+            <div class="news-card-body">
+                <span style="display:none;">Nutrition Triathlon</span>
+              <div class="news-date-loc">
+                <span><i class="far fa-calendar"></i> Sep 15-18, 2026</span>
+                <span><i class="fas fa-map-marker-alt"></i> State Aquatic Center</span>
+              </div>
+              <h4>National Championship Trials</h4>
+              <p>AquaRise team selection trials for the upcoming National Swimming Championships.</p>
+            </div>
+          </div>
+
+          <div class="news-card reveal" style="transition-delay:0.25s">
+            <div class="news-card-img">
+              <img src="../assets/images/coach.png" alt="Coach Workshop">
+            </div>
+            <div class="news-card-body">
+                <span style="display:none;">Open Water</span>
+              <div class="news-date-loc">
+                <span><i class="far fa-calendar"></i> Oct 5-6, 2026</span>
+                <span><i class="fas fa-map-marker-alt"></i> AquaRise Academy</span>
+              </div>
+              <h4>International Coach Workshop</h4>
+              <p>Professional development workshop for coaches featuring FINA-certified international trainers.</p>
+            </div>
+          </div>
+
+          <div class="news-card reveal" style="transition-delay:0.35s">
+            <div class="news-card-img">
+              <img src="../assets/images/hero_pool.png" alt="New Batch Opening">
+            </div>
+            <div class="news-card-body">
+                <span style="display:none;">Butterfly</span>
+              <div class="news-date-loc">
+                <span><i class="far fa-calendar"></i> Nov 1, 2026</span>
+                <span><i class="fas fa-map-marker-alt"></i> All Locations</span>
+              </div>
+              <h4>New Batch Registration Open</h4>
+              <p>Enrollments open for the winter batch. Early bird discounts available for limited seats.</p>
+            </div>
+          </div>
+
+          <div class="news-card reveal" style="transition-delay:0.45s">
+            <div class="news-card-img">
+              <img src="https://images.unsplash.com/photo-1519315901367-f34ff9154487?auto=format&fit=crop&w=600&q=80" alt="Swimming Competition">
+            </div>
+            <div class="news-card-body">
+                <span style="display:none;">Endurance</span>
+              <div class="news-date-loc">
+                <span><i class="far fa-calendar"></i> Dec 12, 2026</span>
+                <span><i class="fas fa-map-marker-alt"></i> Main Pool</span>
+              </div>
+              <h4>Annual Inter-Academy Swim Meet</h4>
+              <p>Annual swimming competition featuring teams from 12 partner academies across the region.</p>
+            </div>
+          </div>
+
+          <div class="news-card reveal" style="transition-delay:0.55s">
+            <div class="news-card-img">
+              <img src="https://images.unsplash.com/photo-1600965962361-9035dbfd1c50?auto=format&fit=crop&w=600&q=80" alt="Award Ceremony">
+            </div>
+            <div class="news-card-body">
+                <span style="display:none;">Triathlon Coaching</span>
+              <div class="news-date-loc">
+                <span><i class="far fa-calendar"></i> Jan 20, 2027</span>
+                <span><i class="fas fa-map-marker-alt"></i> Grand Ballroom</span>
+              </div>
+              <h4>Annual Awards Ceremony</h4>
+              <p>Celebrating our swimmers' achievements with trophies, medals, and special recognitions.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SECTION 7: NEWSLETTER & CTA                                 -->
+    <!-- ============================================================ -->
+    <section class="section-padding newsletter-section">
+      <div class="container">
+        <div class="newsletter-cta reveal">
+          <h3>Stay Updated with AquaRise</h3>
+          <p>Get the latest swimming tips, academy news, and exclusive offers delivered straight to your inbox.</p>
+
+          <form class="newsletter-form-box" id="blog-newsletter-form" data-no-global-validate>
+            <input type="text" id="newsletter-name" placeholder="Your Name..." aria-label="Your Name">
+            <input type="email" id="newsletter-email" placeholder="Your Email..." aria-label="Your Email" required>
+            <button type="submit" class="btn btn-accent" style="padding:0.85rem 2rem;"><i class="fas fa-paper-plane"></i> Subscribe</button>
+          </form>
+
+          <div class="cta-btns">
+            <a href="#" class="btn btn-accent" id="blog-view-programs"><i class="fas fa-arrow-right"></i> View Programs</a>
+            <a href="contact.html" class="btn-outline-light" id="blog-contact-btn">Contact Us</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <a href="../index.html" class="logo">
+            <img src="../assets/favicon/favicon.svg" alt="AquaRise Logo">
+            <span>Aqua</span>Rise
+          </a>
+          <p>AquaRise is the premier luxury swimming academy and aquatic center offering world-class training, state-of-the-art facilities, and certified instruction.</p>
+          <div class="social-links" style="justify-content:flex-start;">
+            <a href="https://facebook.com" target="_blank" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://instagram.com" target="_blank" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://linkedin.com" target="_blank" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://twitter.com" target="_blank" class="social-icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://youtube.com" target="_blank" class="social-icon" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="footer-title">Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            
+
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer-title">Support</h3>
+          <ul class="footer-links">
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="terms-condition.html">Terms & Conditions</a></li>
+            <li><a href="booking.html">Book Now</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer-title">Get In Touch</h3>
+          <ul class="footer-contact">
+            <li><i class="fas fa-phone"></i> <a href="tel:+18005557946">+1 (800) 555-SWIM</a></li>
+            <li><i class="fas fa-envelope"></i> <a href="mailto:info@aquarise.com">info@aquarise.com</a></li>
+            <li><i class="fas fa-map-marker-alt"></i> <a href="https://maps.google.com" target="_blank">124 Aquatic Boulevard, Grand Marina</a></li>
+          </ul>
+          <h4 style="margin-top:1.5rem; margin-bottom:0.75rem; font-size:1rem;">Newsletter</h4>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Your Email..." required>
+            <button type="submit" class="btn btn-primary" style="padding:0.6rem 1.2rem;"><i class="fas fa-paper-plane"></i></button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 AquaRise Aquatic Center. All Rights Reserved.</p>
+        <p>Crafted for Luxury Swimming Excellence.</p>
+        <div class="footer-bottom-links">
+          <a href="maintenance.html">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- BACK TO TOP BUTTON -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- JS Scripts -->
+  <script src="../js/theme.js"></script>
+  <script src="../js/rtl.js"></script>
+  <script src="../js/validation.js"></script>
+  <script src="../js/main.js"></script>
+  <script src="../js/blog.js"></script>
+
+  
+  
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Helper to handle navigation
+      const navigateToDetail = (card) => {
+          let img = '';
+          const imgEl = card.querySelector('img');
+          if (imgEl) img = imgEl.src;
+          
+          let title = '';
+          const titleEl = card.querySelector('h2, h3, h4, .sp-title');
+          if (titleEl) title = titleEl.innerText;
+          
+          let date = '';
+          const dateEl = card.querySelector('.blog-date, .featured-meta span, .news-date-loc span, .sp-date');
+          if (dateEl) {
+            date = dateEl.textContent.trim();
+          }
+
+          const params = new URLSearchParams();
+          if (img) params.append('img', img);
+          if (title) params.append('title', title);
+          if (date) params.append('date', date);
+          
+          window.location.href = 'blog-detail.html?' + params.toString();
+      };
+
+      // Make all cards entirely clickable
+      const allCards = document.querySelectorAll('.blog-card, .featured-card, .news-card, .sidebar-post');
+      
+      allCards.forEach(card => {
+        card.style.cursor = 'pointer';
+        card.addEventListener('click', (e) => {
+          // Prevent default if they clicked a link inside the card
+          if (e.target.closest('a')) {
+              e.preventDefault();
+          }
+          navigateToDetail(card);
+        });
+      });
+    });
+  </script>
+</body>
+
+
+
+</html>
+

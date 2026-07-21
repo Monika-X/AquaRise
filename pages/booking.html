@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booking – AquaRise Swimming Academy & Aquatic Center</title>
+  <meta name="description" content="Book your premium swimming program at AquaRise. Choose from kids, teen, adult, women's, fitness, and competitive training programs with flexible batch schedules.">
+  <link rel="icon" type="image/svg+xml" href="../assets/favicon/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="../css/themes.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/booking.css">
+  <link rel="stylesheet" href="../css/rtl.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+
+  <!-- STICKY HEADER -->
+  <header class="header">
+    <div class="container header-container">
+      <a href="../index.html" class="logo">
+        <img src="../assets/favicon/favicon.svg" alt="AquaRise Logo">
+        <span>Aqua</span>Rise
+      </a>
+      <nav class="nav-menu" id="nav-menu">
+        <a href="../index.html" class="nav-link">Home</a>
+        <a href="home2.html" class="nav-link">Home2</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="gallery.html" class="nav-link">Gallery</a>
+        <a href="blog.html" class="nav-link">Blog</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+
+      
+        <a href="booking.html" class="nav-link mobile-only btn-mobile-trial">Book Trial</a>
+      </nav>
+      <div class="header-controls">
+        <div class="user-profile">
+          <button class="control-btn user-btn" aria-label="User Profile"><i class="fas fa-user"></i></button>
+          <div class="user-dropdown">
+            <a href="login.html"><i class="fas fa-sign-in-alt"></i> Login</a>
+            <a href="signup.html"><i class="fas fa-user-plus"></i> Sign Up</a>
+          </div>
+        </div>
+        <button id="theme-toggle" class="control-btn" aria-label="Toggle Theme"><i class="fas fa-moon"></i></button>
+        <button id="rtl-toggle" class="control-btn" aria-label="Toggle RTL">RTL</button>
+        <a href="booking.html" class="btn btn-primary">Book Trial</a>
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Menu"><i class="fas fa-bars"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ============================================================ -->
+    <!-- SECTION 1: HERO BANNER                                       -->
+    <!-- ============================================================ -->
+    <section class="booking-hero">
+      <div class="booking-hero-bg">
+        <img src="https://images.unsplash.com/photo-1560090995-01c3288b99d3?auto=format&fit=crop&w=1920&q=80" alt="Olympic Swimming Pool">
+      </div>
+      <div class="booking-hero-overlay"></div>
+      <div class="container">
+        <div class="breadcrumb reveal">
+          <a href="../index.html">Home</a>
+          <i class="fas fa-chevron-right"></i>
+          <span>Booking</span>
+        </div>
+        <h1 class="reveal" style="transition-delay:0.1s">Book Your <span>Swimming Program</span></h1>
+        <p class="reveal" style="transition-delay:0.2s">Reserve your spot in AquaRise's world-class swimming programs. Choose from expert-led courses designed for every age and skill level in our Olympic-standard aquatic facility.</p>
+        <div class="booking-hero-btns reveal" style="transition-delay:0.3s">
+          <a href="#booking-form" class="btn btn-primary"><i class="fas fa-calendar-check"></i> Book Now</a>
+          <a href="contact.html" class="btn btn-secondary">Contact Us</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SECTION 2: CHOOSE YOUR PROGRAM                               -->
+    <!-- ============================================================ -->
+    <section class="section-padding programs-section" id="programs">
+      <div class="container">
+        <div class="text-center">
+          <span class="section-tag reveal"><i class="fas fa-water"></i> Premium Programs</span>
+          <h2 class="section-title reveal">Choose Your Program</h2>
+          <p class="section-subtitle reveal">Select the perfect swimming program tailored to your age, skill level, and fitness goals.</p>
+        </div>
+
+        <div class="programs-grid">
+          <div class="program-card booking-program-card reveal" style="transition-delay:0.05s">
+            <div class="program-img">
+              <img src="https://i.pinimg.com/1200x/37/91/11/37911190037bfae04aa89a7dd5e4480a.jpg" alt="Kids Swimming">
+              <span class="program-badge"><i class="fas fa-child"></i> Ages 4-12</span>
+            </div>
+            <div class="program-content">
+              <h3>Kids Swimming</h3>
+              <div class="program-meta">
+                <span><i class="far fa-clock"></i> 8 Weeks</span>
+                <span><i class="fas fa-user-tie"></i> Coach Sarah</span>
+                <span><i class="fas fa-tag"></i> $299</span>
+              </div>
+              <p>Fun-filled, confidence-building sessions with games, floats, and foundational stroke work for children.</p>
+              <button class="btn btn-primary select-program-btn" data-program="Kids Swimming"><i class="fas fa-arrow-right"></i> Select Program</button>
+            </div>
+          </div>
+
+          <div class="program-card booking-program-card reveal" style="transition-delay:0.15s">
+            <div class="program-img">
+              <img src="https://images.unsplash.com/photo-1519315901367-f34ff9154487?auto=format&fit=crop&w=600&q=80" alt="Teen Swimming">
+              <span class="program-badge"><i class="fas fa-people-arrows"></i> Ages 13-17</span>
+            </div>
+            <div class="program-content">
+              <h3>Teen Swimming</h3>
+              <div class="program-meta">
+                <span><i class="far fa-clock"></i> 10 Weeks</span>
+                <span><i class="fas fa-user-tie"></i> Coach Mike</span>
+                <span><i class="fas fa-tag"></i> $349</span>
+              </div>
+              <p>Technique refinement and endurance building for teenagers looking to improve strokes and fitness levels.</p>
+              <button class="btn btn-primary select-program-btn" data-program="Teen Swimming"><i class="fas fa-arrow-right"></i> Select Program</button>
+            </div>
+          </div>
+
+          <div class="program-card booking-program-card reveal" style="transition-delay:0.25s">
+            <div class="program-img">
+              <img src="https://images.unsplash.com/photo-1600965962361-9035dbfd1c50?auto=format&fit=crop&w=600&q=80" alt="Adult Swimming">
+              <span class="program-badge"><i class="fas fa-user"></i> Ages 18+</span>
+            </div>
+            <div class="program-content">
+              <h3>Adult Swimming</h3>
+              <div class="program-meta">
+                <span><i class="far fa-clock"></i> 8 Weeks</span>
+                <span><i class="fas fa-user-tie"></i> Coach Emma</span>
+                <span><i class="fas fa-tag"></i> $399</span>
+              </div>
+              <p>Adult-focused coaching from beginner fundamentals to advanced stroke correction and lap swimming technique.</p>
+              <button class="btn btn-primary select-program-btn" data-program="Adult Swimming"><i class="fas fa-arrow-right"></i> Select Program</button>
+            </div>
+          </div>
+
+          <div class="program-card booking-program-card reveal" style="transition-delay:0.35s">
+            <div class="program-img">
+              <img src="https://i.pinimg.com/736x/5c/26/26/5c26269c4bcd1bd726ca2f991a6f49bb.jpg" alt="Women's Batch">
+              <span class="program-badge"><i class="fas fa-female"></i> Women Only</span>
+            </div>
+            <div class="program-content">
+              <h3>Women's Batch</h3>
+              <div class="program-meta">
+                <span><i class="far fa-clock"></i> 8 Weeks</span>
+                <span><i class="fas fa-user-tie"></i> Coach Layla</span>
+                <span><i class="fas fa-tag"></i> $329</span>
+              </div>
+              <p>Exclusive female-only sessions with senior female instructors in a private, comfortable, supportive setting.</p>
+              <button class="btn btn-primary select-program-btn" data-program="Women's Batch"><i class="fas fa-arrow-right"></i> Select Program</button>
+            </div>
+          </div>
+
+          <div class="program-card booking-program-card reveal" style="transition-delay:0.45s">
+            <div class="program-img">
+              <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=600&q=80" alt="Fitness Swimming">
+              <span class="program-badge"><i class="fas fa-heartbeat"></i> All Levels</span>
+            </div>
+            <div class="program-content">
+              <h3>Fitness Swimming</h3>
+              <div class="program-meta">
+                <span><i class="far fa-clock"></i> 12 Weeks</span>
+                <span><i class="fas fa-user-tie"></i> Coach James</span>
+                <span><i class="fas fa-tag"></i> $449</span>
+              </div>
+              <p>High-calorie aquatic workouts combining lap swimming, interval training, and core strengthening routines.</p>
+              <button class="btn btn-primary select-program-btn" data-program="Fitness Swimming"><i class="fas fa-arrow-right"></i> Select Program</button>
+            </div>
+          </div>
+
+          <div class="program-card booking-program-card reveal" style="transition-delay:0.55s">
+            <div class="program-img">
+              <img src="https://i.pinimg.com/736x/89/06/44/890644ccbb1d28221f7b3cc4bcc3ca3f.jpg" alt="Competitive Training">
+              <span class="program-badge"><i class="fas fa-trophy"></i> Elite</span>
+            </div>
+            <div class="program-content">
+              <h3>Competitive Training</h3>
+              <div class="program-meta">
+                <span><i class="far fa-clock"></i> 16 Weeks</span>
+                <span><i class="fas fa-user-tie"></i> Olympic Coach</span>
+                <span><i class="fas fa-tag"></i> $699</span>
+              </div>
+              <p>Race strategy, advanced pacing, underwater kicks, and mental conditioning for state and national competitions.</p>
+              <button class="btn btn-primary select-program-btn" data-program="Competitive Training"><i class="fas fa-arrow-right"></i> Select Program</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SECTION 3: BATCH SCHEDULE                                    -->
+    <!-- ============================================================ -->
+    <section class="section-padding schedule-section" id="schedule">
+      <div class="container">
+        <div class="text-center">
+          <span class="section-tag reveal"><i class="far fa-calendar-alt"></i> Flexible Timings</span>
+          <h2 class="section-title reveal">Batch Schedule</h2>
+          <p class="section-subtitle reveal">Choose a batch that fits your daily routine. Our flexible timing options ensure you never miss a session.</p>
+        </div>
+
+        <div class="schedule-grid">
+          <div class="schedule-card reveal" style="transition-delay:0.05s">
+            <div class="schedule-icon"><i class="fas fa-sun"></i></div>
+            <h3>Morning Batch</h3>
+            <div class="schedule-detail">
+              <span class="schedule-label">Time</span>
+              <span class="schedule-value">6:00 AM – 8:00 AM</span>
+            </div>
+            <div class="schedule-detail">
+              <span class="schedule-label">Available Seats</span>
+              <span class="schedule-value seats">12 / 20</span>
+            </div>
+            <div class="schedule-detail">
+              <span class="schedule-label">Coach</span>
+              <span class="schedule-value">Coach James</span>
+            </div>
+            <div class="schedule-detail">
+              <span class="schedule-label">Difficulty</span>
+              <span class="schedule-value difficulty beginner">Beginner</span>
+            </div>
+            <button class="btn btn-secondary select-batch-btn" data-batch="Morning Batch"><i class="fas fa-clock"></i> Select Batch</button>
+          </div>
+
+          <div class="schedule-card reveal" style="transition-delay:0.15s">
+            <div class="schedule-icon"><i class="fas fa-cloud-sun"></i></div>
+            <h3>Afternoon Batch</h3>
+            <div class="schedule-detail">
+              <span class="schedule-label">Time</span>
+              <span class="schedule-value">12:00 PM – 2:00 PM</span>
+            </div>
+            <div class="schedule-detail">
+              <span class="schedule-label">Available Seats</span>
+              <span class="schedule-value seats">8 / 20</span>
+            </div>
+            <div class="schedule-detail">
+              <span class="schedule-label">Coach</span>
+              <span class="schedule-value">Coach Emma</span>
+            </div>
+            <div class="schedule-detail">
+              <span class="schedule-label">Difficulty</span>
+              <span class="schedule-value difficulty intermediate">Intermediate</span>
+            </div>
+            <button class="btn btn-secondary select-batch-btn" data-batch="Afternoon Batch"><i class="fas fa-clock"></i> Select Batch</button>
+          </div>
+
+          <div class="schedule-card reveal" style="transition-delay:0.25s">
+            <div class="schedule-icon"><i class="fas fa-moon"></i></div>
+            <h3>Evening Batch</h3>
+            <div class="schedule-detail">
+              <span class="schedule-label">Time</span>
+              <span class="schedule-value">5:00 PM – 7:00 PM</span>
+            </div>
+            <div class="schedule-detail">
+              <span class="schedule-label">Available Seats</span>
+              <span class="schedule-value seats">15 / 20</span>
+            </div>
+            <div class="schedule-detail">
+              <span class="schedule-label">Coach</span>
+              <span class="schedule-value">Coach Mike</span>
+            </div>
+            <div class="schedule-detail">
+              <span class="schedule-label">Difficulty</span>
+              <span class="schedule-value difficulty all">All Levels</span>
+            </div>
+            <button class="btn btn-secondary select-batch-btn" data-batch="Evening Batch"><i class="fas fa-clock"></i> Select Batch</button>
+          </div>
+
+          <div class="schedule-card reveal" style="transition-delay:0.35s">
+            <div class="schedule-icon"><i class="fas fa-calendar-week"></i></div>
+            <h3>Weekend Batch</h3>
+            <div class="schedule-detail">
+              <span class="schedule-label">Time</span>
+              <span class="schedule-value">8:00 AM – 10:00 AM</span>
+            </div>
+            <div class="schedule-detail">
+              <span class="schedule-label">Available Seats</span>
+              <span class="schedule-value seats">10 / 20</span>
+            </div>
+            <div class="schedule-detail">
+              <span class="schedule-label">Coach</span>
+              <span class="schedule-value">Coach Layla</span>
+            </div>
+            <div class="schedule-detail">
+              <span class="schedule-label">Difficulty</span>
+              <span class="schedule-value difficulty all">All Levels</span>
+            </div>
+            <button class="btn btn-secondary select-batch-btn" data-batch="Weekend Batch"><i class="fas fa-clock"></i> Select Batch</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SECTION 4: BOOKING FORM                                      -->
+    <!-- ============================================================ -->
+    <section class="section-padding form-section" id="booking-form">
+      <div class="container">
+        <div class="text-center">
+          <span class="section-tag reveal"><i class="fas fa-pen"></i> Secure Your Spot</span>
+          <h2 class="section-title reveal">Booking Form</h2>
+          <p class="section-subtitle reveal">Fill in your details below to reserve a place in your chosen program. Fields marked with * are required.</p>
+        </div>
+
+        <div class="form-wrapper">
+          <div class="form-card glass-card reveal-left">
+            <h3><i class="fas fa-file-invoice" style="color:var(--secondary-color);margin-right:0.5rem;"></i> Personal Information</h3>
+            <p>Provide your contact details and program preferences.</p>
+
+            <form id="booking-form-element" data-no-global-validate novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="full-name">Full Name *</label>
+                  <input type="text" id="full-name" name="full-name" placeholder="Enter your full name" required>
+                </div>
+                <div class="form-group">
+                  <label for="email">Email Address *</label>
+                  <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="phone">Phone Number *</label>
+                  <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                </div>
+                <div class="form-group">
+                  <label for="age">Age *</label>
+                  <input type="number" id="age" name="age" placeholder="Enter your age" min="1" max="120" required>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="gender">Gender *</label>
+                  <select id="gender" name="gender" required>
+                    <option value="" disabled selected>Select Gender</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                    <option value="Prefer not to say">Prefer not to say</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="program-select">Select Program *</label>
+                  <select id="program-select" name="program" required>
+                    <option value="" disabled selected>Choose a Program</option>
+                    <option value="Kids Swimming">Kids Swimming</option>
+                    <option value="Teen Swimming">Teen Swimming</option>
+                    <option value="Adult Swimming">Adult Swimming</option>
+                    <option value="Women's Batch">Women's Batch</option>
+                    <option value="Fitness Swimming">Fitness Swimming</option>
+                    <option value="Competitive Training">Competitive Training</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="batch-select">Select Batch *</label>
+                  <select id="batch-select" name="batch" required>
+                    <option value="" disabled selected>Choose a Batch</option>
+                    <option value="Morning Batch">Morning Batch (6:00 AM – 8:00 AM)</option>
+                    <option value="Afternoon Batch">Afternoon Batch (12:00 PM – 2:00 PM)</option>
+                    <option value="Evening Batch">Evening Batch (5:00 PM – 7:00 PM)</option>
+                    <option value="Weekend Batch">Weekend Batch (8:00 AM – 10:00 AM)</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="start-date">Preferred Start Date *</label>
+                  <input type="date" id="start-date" name="start-date" required>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="preferred-time">Preferred Time</label>
+                  <input type="time" id="preferred-time" name="preferred-time">
+                </div>
+                <div class="form-group">
+                  <label for="experience">Swimming Experience *</label>
+                  <select id="experience" name="experience" required>
+                    <option value="" disabled selected>Select Experience Level</option>
+                    <option value="Beginner">Beginner (Never swam before)</option>
+                    <option value="Basic">Basic (Can float & splash)</option>
+                    <option value="Intermediate">Intermediate (Can swim one stroke)</option>
+                    <option value="Advanced">Advanced (Can swim multiple strokes)</option>
+                    <option value="Competitive">Competitive (Race experience)</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="emergency-contact">Emergency Contact *</label>
+                  <input type="text" id="emergency-contact" name="emergency-contact" placeholder="Full name & phone number" required>
+                </div>
+                <div class="form-group">
+                  <label for="emergency-relation">Emergency Relation *</label>
+                  <select id="emergency-relation" name="emergency-relation" required>
+                    <option value="" disabled selected>Select Relation</option>
+                    <option value="Parent">Parent</option>
+                    <option value="Spouse">Spouse</option>
+                    <option value="Sibling">Sibling</option>
+                    <option value="Friend">Friend</option>
+                    <option value="Guardian">Guardian</option>
+                    <option value="Other">Other</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="notes">Additional Notes</label>
+                <textarea id="notes" name="notes" rows="3" placeholder="Any medical conditions, special requests, or additional information..."></textarea>
+              </div>
+
+              <div class="checkbox-group">
+                <input type="checkbox" id="agree-terms" name="agree-terms" required>
+                <label for="agree-terms">I agree to the <a href="terms-condition.html" target="_blank" style="color:var(--secondary-color);font-weight:600;">Terms &amp; Conditions</a> and <a href="privacy-policy.html" target="_blank" style="color:var(--secondary-color);font-weight:600;">Privacy Policy</a> of AquaRise *</label>
+              </div>
+
+              <div class="form-btns">
+                <button type="submit" class="btn btn-primary btn-submit"><i class="fas fa-check-circle"></i> Confirm Booking</button>
+                <button type="reset" class="btn btn-secondary btn-reset"><i class="fas fa-undo"></i> Reset</button>
+              </div>
+            </form>
+
+            <div class="success-msg" id="form-success">
+              <div class="success-icon"><i class="fas fa-check-circle"></i></div>
+              <h4>Booking Confirmed!</h4>
+              <p>Thank you for booking with AquaRise. A confirmation email with your program details will be sent shortly. Our team will contact you within 24 hours to finalize your schedule.</p>
+              <button class="btn btn-primary" onclick="location.reload()" style="margin-top:1.5rem;"><i class="fas fa-plus-circle"></i> Book Another</button>
+            </div>
+          </div>
+
+          <div class="form-side reveal-right">
+            <div class="form-side-card">
+              <h4><i class="fas fa-info-circle"></i> Booking Summary</h4>
+              <ul id="booking-summary">
+                <li><i class="fas fa-check"></i> No program selected yet</li>
+                <li><i class="fas fa-check"></i> No batch selected yet</li>
+              </ul>
+            </div>
+            <div class="form-side-card">
+              <h4><i class="fas fa-shield-alt"></i> Why Book With Us?</h4>
+              <ul>
+                <li><i class="fas fa-check-circle"></i> Certified international coaches</li>
+                <li><i class="fas fa-check-circle"></i> Olympic-standard 50m pool</li>
+                <li><i class="fas fa-check-circle"></i> Flexible rescheduling policy</li>
+                <li><i class="fas fa-check-circle"></i> Money-back guarantee</li>
+                <li><i class="fas fa-check-circle"></i> Free trial assessment</li>
+                <li><i class="fas fa-check-circle"></i> Premium locker & changing rooms</li>
+              </ul>
+            </div>
+            <div class="form-side-card">
+              <h4><i class="fas fa-phone-alt"></i> Need Help?</h4>
+              <p style="font-size:0.9rem;color:var(--text-light);margin-bottom:0.75rem;">Call us or visit for a personal consultation.</p>
+              <p style="font-size:1rem;font-weight:700;color:var(--text-heading);margin-bottom:0.25rem;"><i class="fas fa-phone" style="color:var(--secondary-color);margin-right:0.5rem;"></i> +1 (800) 555-SWIM</p>
+              <p style="font-size:0.9rem;color:var(--text-light);"><i class="fas fa-envelope" style="color:var(--secondary-color);margin-right:0.5rem;"></i> booking@aquarise.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SECTION 5: PRICING PLANS                                     -->
+    <!-- ============================================================ -->
+    <section class="section-padding pricing-section" id="pricing">
+      <div class="container">
+        <div class="text-center">
+          <span class="section-tag reveal"><i class="fas fa-tags"></i> Investment</span>
+          <h2 class="section-title reveal">Pricing Plans</h2>
+          <p class="section-subtitle reveal">Choose a membership plan that suits your commitment level. All plans include access to our Olympic-standard facility.</p>
+        </div>
+
+        <div class="pricing-grid">
+          <div class="pricing-card reveal" style="transition-delay:0.05s">
+            <div class="pricing-header">
+              <h3>Starter Plan</h3>
+              <div class="pricing-price"><span class="currency">$</span>199<span class="period">/mo</span></div>
+              <p>Perfect for beginners exploring swimming</p>
+            </div>
+            <ul class="pricing-features">
+              <li><i class="fas fa-check"></i> 4 Sessions per month</li>
+              <li><i class="fas fa-check"></i> Group coaching access</li>
+              <li><i class="fas fa-check"></i> Pool access during sessions</li>
+              <li><i class="fas fa-check"></i> Basic assessment included</li>
+              <li><i class="fas fa-times"></i> 1-on-1 coaching</li>
+              <li><i class="fas fa-times"></i> Free trial session</li>
+            </ul>
+            <button class="btn btn-secondary pricing-btn" data-plan="Starter Plan"><i class="fas fa-arrow-right"></i> Choose Starter</button>
+          </div>
+
+          <div class="pricing-card pricing-featured reveal" style="transition-delay:0.15s">
+            <div class="pricing-badge">Most Popular</div>
+            <div class="pricing-header">
+              <h3>Standard Plan</h3>
+              <div class="pricing-price"><span class="currency">$</span>349<span class="period">/mo</span></div>
+              <p>Ideal for regular training & improvement</p>
+            </div>
+            <ul class="pricing-features">
+              <li><i class="fas fa-check"></i> 8 Sessions per month</li>
+              <li><i class="fas fa-check"></i> Full coach access</li>
+              <li><i class="fas fa-check"></i> Unlimited pool access</li>
+              <li><i class="fas fa-check"></i> Progress tracking included</li>
+              <li><i class="fas fa-check"></i> 2 private sessions</li>
+              <li><i class="fas fa-check"></i> Free trial session</li>
+            </ul>
+            <button class="btn btn-primary pricing-btn" data-plan="Standard Plan"><i class="fas fa-arrow-right"></i> Choose Standard</button>
+          </div>
+
+          <div class="pricing-card reveal" style="transition-delay:0.25s">
+            <div class="pricing-header">
+              <h3>Elite Plan</h3>
+              <div class="pricing-price"><span class="currency">$</span>599<span class="period">/mo</span></div>
+              <p>For serious athletes & competitive swimmers</p>
+            </div>
+            <ul class="pricing-features">
+              <li><i class="fas fa-check"></i> Unlimited sessions</li>
+              <li><i class="fas fa-check"></i> Olympic coach access</li>
+              <li><i class="fas fa-check"></i> Premium pool & gym access</li>
+              <li><i class="fas fa-check"></i> Video analysis included</li>
+              <li><i class="fas fa-check"></i> 8 private sessions</li>
+              <li><i class="fas fa-check"></i> Free trial + nutrition plan</li>
+            </ul>
+            <button class="btn btn-secondary pricing-btn" data-plan="Elite Plan"><i class="fas fa-arrow-right"></i> Choose Elite</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SECTION 6: BOOKING BENEFITS                                  -->
+    <!-- ============================================================ -->
+    <section class="section-padding benefits-section" id="benefits">
+      <div class="container">
+        <div class="text-center">
+          <span class="section-tag reveal"><i class="fas fa-gem"></i> Why AquaRise</span>
+          <h2 class="section-title reveal">Booking Benefits</h2>
+          <p class="section-subtitle reveal">Experience the AquaRise advantage. Every booking includes access to world-class facilities and expert coaching.</p>
+        </div>
+
+        <div class="benefits-grid">
+          <div class="benefit-card reveal" style="transition-delay:0.05s">
+            <div class="benefit-icon-wrapper"><i class="fas fa-certificate"></i></div>
+            <h3>Certified Coaches</h3>
+            <p>Learn from internationally certified coaches with years of competitive and teaching experience at the highest levels.</p>
+          </div>
+
+          <div class="benefit-card reveal" style="transition-delay:0.15s">
+            <div class="benefit-icon-wrapper"><i class="fas fa-clock"></i></div>
+            <h3>Flexible Batch Timing</h3>
+            <p>Choose from morning, afternoon, evening, and weekend batches that seamlessly fit your busy schedule.</p>
+          </div>
+
+          <div class="benefit-card reveal" style="transition-delay:0.25s">
+            <div class="benefit-icon-wrapper"><i class="fas fa-swimmer"></i></div>
+            <h3>Olympic Pool</h3>
+            <p>Train in our Olympic-standard 50-meter pool with state-of-the-art filtration, lighting, and temperature control.</p>
+          </div>
+
+          <div class="benefit-card reveal" style="transition-delay:0.35s">
+            <div class="benefit-icon-wrapper"><i class="fas fa-shield-alt"></i></div>
+            <h3>Safe Environment</h3>
+            <p>24/7 lifeguard supervision, advanced safety protocols, and a hygienic environment monitored by certified professionals.</p>
+          </div>
+
+          <div class="benefit-card reveal" style="transition-delay:0.45s">
+            <div class="benefit-icon-wrapper"><i class="fas fa-chart-line"></i></div>
+            <h3>Progress Tracking</h3>
+            <p>Detailed progress reports with video analysis, benchmark tests, and personalized improvement plans for every swimmer.</p>
+          </div>
+
+          <div class="benefit-card reveal" style="transition-delay:0.55s">
+            <div class="benefit-icon-wrapper"><i class="fas fa-trophy"></i></div>
+            <h3>Competition Opportunities</h3>
+            <p>Access to inter-academy meets, state championships, and national-level competitions with full coaching support.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SECTION 7: BOOKING CONFIRMATION CTA                          -->
+    <!-- ============================================================ -->
+    <section class="section-padding cta-section-wrapper">
+      <div class="container">
+        <div class="booking-cta reveal">
+          <h3>Ready to Begin Your Swimming Journey?</h3>
+          <p>Join AquaRise today and experience the most premium swimming education. Book your program now and take the first stroke toward excellence.</p>
+          <div class="cta-btns">
+            <a href="#booking-form" class="btn btn-accent"><i class="fas fa-calendar-check"></i> Confirm Booking</a>
+            <a href="services.html" class="btn-outline-light">Explore Programs</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <a href="../index.html" class="logo">
+            <img src="../assets/favicon/favicon.svg" alt="AquaRise Logo">
+            <span>Aqua</span>Rise
+          </a>
+          <p>AquaRise is the premier luxury swimming academy and aquatic center offering world-class training, state-of-the-art facilities, and certified instruction.</p>
+          <div class="social-links" style="justify-content:flex-start;">
+            <a href="https://facebook.com" target="_blank" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://instagram.com" target="_blank" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://linkedin.com" target="_blank" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://twitter.com" target="_blank" class="social-icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://youtube.com" target="_blank" class="social-icon" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="footer-title">Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            
+
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer-title">Support</h3>
+          <ul class="footer-links">
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="terms-condition.html">Terms & Conditions</a></li>
+            <li><a href="booking.html">Book Now</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer-title">Get In Touch</h3>
+          <ul class="footer-contact">
+            <li><i class="fas fa-phone"></i> <a href="tel:+18005557946">+1 (800) 555-SWIM</a></li>
+            <li><i class="fas fa-envelope"></i> <a href="mailto:info@aquarise.com">info@aquarise.com</a></li>
+            <li><i class="fas fa-map-marker-alt"></i> <a href="https://maps.google.com" target="_blank">124 Aquatic Boulevard, Grand Marina</a></li>
+          </ul>
+          <h4 style="margin-top:1.5rem; margin-bottom:0.75rem; font-size:1rem;">Newsletter</h4>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Your Email..." required>
+            <button type="submit" class="btn btn-primary" style="padding:0.6rem 1.2rem;"><i class="fas fa-paper-plane"></i></button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 AquaRise Aquatic Center. All Rights Reserved.</p>
+        <p>Crafted for Luxury Swimming Excellence.</p>
+        <div class="footer-bottom-links">
+          <a href="maintenance.html">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- BACK TO TOP BUTTON -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- JS Scripts -->
+  <script src="../js/theme.js"></script>
+  <script src="../js/rtl.js"></script>
+  <script src="../js/validation.js"></script>
+  <script src="../js/main.js"></script>
+  <script src="../js/booking.js"></script>
+</body>
+</html>

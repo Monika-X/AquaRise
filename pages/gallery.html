@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery – AquaRise Swimming Academy & Aquatic Center</title>
+  <meta name="description" content="Explore AquaRise gallery featuring premium pool facilities, training sessions, competitions, and championship highlights.">
+  <link rel="icon" type="image/svg+xml" href="../assets/favicon/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <link rel="stylesheet" href="../css/themes.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/gallery.css">
+  <link rel="stylesheet" href="../css/rtl.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+
+  <!-- STICKY HEADER -->
+  <header class="header">
+    <div class="container header-container">
+      <a href="../index.html" class="logo">
+        <img src="../assets/favicon/favicon.svg" alt="AquaRise Logo">
+        <span>Aqua</span>Rise
+      </a>
+      <nav class="nav-menu" id="nav-menu">
+        <a href="../index.html" class="nav-link">Home</a>
+        <a href="home2.html" class="nav-link">Home2</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="gallery.html" class="nav-link">Gallery</a>
+        <a href="blog.html" class="nav-link">Blog</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+
+      
+        <a href="booking.html" class="nav-link mobile-only btn-mobile-trial">Book Trial</a>
+      </nav>
+      <div class="header-controls">
+        <div class="user-profile">
+          <button class="control-btn user-btn" aria-label="User Profile"><i class="fas fa-user"></i></button>
+          <div class="user-dropdown">
+            <a href="login.html"><i class="fas fa-sign-in-alt"></i> Login</a>
+            <a href="signup.html"><i class="fas fa-user-plus"></i> Sign Up</a>
+          </div>
+        </div>
+        <button id="theme-toggle" class="control-btn" aria-label="Toggle Theme"><i class="fas fa-moon"></i></button>
+        <button id="rtl-toggle" class="control-btn" aria-label="Toggle RTL">RTL</button>
+        <a href="booking.html" class="btn btn-primary">Book Trial</a>
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Menu"><i class="fas fa-bars"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ============================================================ -->
+    <!-- SECTION 1: HERO BANNER                                      -->
+    <!-- ============================================================ -->
+    <section class="gallery-hero">
+      <div class="gallery-hero-bg">
+        <img src="../assets/images/hero_pool.png" alt="AquaRise Pool">
+      </div>
+      <div class="gallery-hero-overlay"></div>
+      <div class="container">
+        <div class="breadcrumb reveal">
+          <a href="../index.html">Home</a>
+          <i class="fas fa-chevron-right"></i>
+          <span>Gallery</span>
+        </div>
+        <h1 class="reveal" style="transition-delay:0.1s">Our <span>Swimming Gallery</span></h1>
+        <p class="reveal" style="transition-delay:0.2s">Take a visual journey through AquaRise — from our Olympic-grade pools and luxury changing suites to action-packed training sessions and championship celebrations.</p>
+        <a href="#" class="btn btn-primary reveal" id="gallery-book-trial" style="transition-delay:0.3s"><i class="fas fa-calendar-check"></i> Book Free Trial</a>
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SECTION 2: GALLERY CATEGORIES                               -->
+    <!-- ============================================================ -->
+    <section class="section-padding filter-section">
+      <div class="container">
+        <div class="text-center">
+          <span class="section-tag reveal"><i class="fas fa-tags"></i> Browse By Category</span>
+          <h2 class="section-title reveal">Gallery Categories</h2>
+          <p class="section-subtitle reveal">Filter through our premium collection of aquatic moments and facility showcases.</p>
+        </div>
+
+        <div class="filter-bar reveal">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="classes">Swimming Classes</button>
+          <button class="filter-btn" data-filter="kids">Kids Training</button>
+          <button class="filter-btn" data-filter="adult">Adult Training</button>
+          <button class="filter-btn" data-filter="competition">Competitions</button>
+          <button class="filter-btn" data-filter="facility">Facilities</button>
+          <button class="filter-btn" data-filter="events">Events</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SECTION 3: PREMIUM IMAGE GALLERY                            -->
+    <!-- ============================================================ -->
+    <section class="section-padding gallery-masonry">
+      <div class="container">
+        <div class="masonry-grid">
+          <div class="masonry-item masonry-item-h-2" data-category="facility">
+            <img src="../assets/images/hero_pool.png" alt="Olympic Pool">
+            <div class="masonry-overlay">
+              <span class="masonry-label"><i class="fas fa-swimming-pool"></i> Facilities</span>
+              <h4>Olympic Standard Pool</h4>
+              <button class="view-btn"><i class="fas fa-expand"></i></button>
+            </div>
+          </div>
+
+          <div class="masonry-item masonry-item-h-1" data-category="kids">
+            <img src="https://i.pinimg.com/1200x/37/91/11/37911190037bfae04aa89a7dd5e4480a.jpg" alt="Kids Swimming">
+            <div class="masonry-overlay">
+              <span class="masonry-label"><i class="fas fa-child"></i> Kids Training</span>
+              <h4>Kids Swimming Class</h4>
+              <button class="view-btn"><i class="fas fa-expand"></i></button>
+            </div>
+          </div>
+
+          <div class="masonry-item masonry-item-h-1" data-category="classes">
+            <img src="https://images.unsplash.com/photo-1519315901367-f34ff9154487?auto=format&fit=crop&w=600&q=80" alt="Adult Training">
+            <div class="masonry-overlay">
+              <span class="masonry-label"><i class="fas fa-user"></i> Swimming Classes</span>
+              <h4>Adult Stroke Training</h4>
+              <button class="view-btn"><i class="fas fa-expand"></i></button>
+            </div>
+          </div>
+
+          <div class="masonry-item masonry-item-h-1" data-category="competition">
+            <img src="https://i.pinimg.com/736x/8d/a2/1c/8da21c17973836fc656ac80df9a3f02b.jpg" alt="Swimming Competition">
+            <div class="masonry-overlay">
+              <span class="masonry-label"><i class="fas fa-trophy"></i> Competitions</span>
+              <h4>Annual Swim Meet</h4>
+              <button class="view-btn"><i class="fas fa-expand"></i></button>
+            </div>
+          </div>
+
+          <div class="masonry-item masonry-item-h-2" data-category="facility">
+            <img src="../assets/images/facility.png" alt="Facility Lounge">
+            <div class="masonry-overlay">
+              <span class="masonry-label"><i class="fas fa-couch"></i> Facilities</span>
+              <h4>Premium Lounge Area</h4>
+              <button class="view-btn"><i class="fas fa-expand"></i></button>
+            </div>
+          </div>
+
+          <div class="masonry-item masonry-item-h-1" data-category="adult">
+            <img src="https://images.unsplash.com/photo-1600965962361-9035dbfd1c50?auto=format&fit=crop&w=600&q=80" alt="Adult Fitness">
+            <div class="masonry-overlay">
+              <span class="masonry-label"><i class="fas fa-heartbeat"></i> Adult Training</span>
+              <h4>Fitness Swimming Session</h4>
+              <button class="view-btn"><i class="fas fa-expand"></i></button>
+            </div>
+          </div>
+
+          <div class="masonry-item masonry-item-h-1" data-category="events">
+            <img src="../assets/images/coach.png" alt="Coaching Event">
+            <div class="masonry-overlay">
+              <span class="masonry-label"><i class="fas fa-calendar-star"></i> Events</span>
+              <h4>Coach Certification Workshop</h4>
+              <button class="view-btn"><i class="fas fa-expand"></i></button>
+            </div>
+          </div>
+
+          <div class="masonry-item masonry-item-h-1" data-category="kids">
+            <img src="https://images.unsplash.com/photo-1530549387789-4c1017266635?auto=format&fit=crop&w=600&q=80" alt="Kids Swim Lesson">
+            <div class="masonry-overlay">
+              <span class="masonry-label"><i class="fas fa-child"></i> Kids Training</span>
+              <h4>Beginner Swim Lesson</h4>
+              <button class="view-btn"><i class="fas fa-expand"></i></button>
+            </div>
+          </div>
+
+          <div class="masonry-item masonry-item-h-1" data-category="competition">
+            <img src="https://i.pinimg.com/736x/aa/ea/64/aaea6424e3dc6ee7cded80bb9564144f.jpg" alt="Race Day">
+            <div class="masonry-overlay">
+              <span class="masonry-label"><i class="fas fa-medal"></i> Competitions</span>
+              <h4>Championship Race Day</h4>
+              <button class="view-btn"><i class="fas fa-expand"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SECTION 4: POOL FACILITIES SHOWCASE                         -->
+    <!-- ============================================================ -->
+    <section class="section-padding facilities-section">
+      <div class="container">
+        <div class="text-center">
+          <span class="section-tag reveal"><i class="fas fa-building"></i> Our Infrastructure</span>
+          <h2 class="section-title reveal">Pool Facilities Showcase</h2>
+          <p class="section-subtitle reveal">Experience world-class aquatic infrastructure designed for comfort, performance, and safety.</p>
+        </div>
+
+        <div class="facilities-grid">
+          <div class="facility-card reveal" style="transition-delay:0.05s">
+            <div class="facility-card-img">
+              <img src="../assets/images/hero_pool.png" alt="Olympic Pool">
+            </div>
+            <div class="facility-card-body">
+              <h4>Olympic Pool</h4>
+              <p>50-meter temperature-controlled pool with anti-wave lane dividers and underwater lighting.</p>
+            </div>
+          </div>
+
+          <div class="facility-card reveal" style="transition-delay:0.12s">
+            <div class="facility-card-img">
+              <img src="https://images.unsplash.com/photo-1530549387789-4c1017266635?auto=format&fit=crop&w=600&q=80" alt="Kids Pool">
+            </div>
+            <div class="facility-card-body">
+              <h4>Kids Pool</h4>
+              <p>Shallow heated splash pool with graduated depth for safe child learning and water play.</p>
+            </div>
+          </div>
+
+          <div class="facility-card reveal" style="transition-delay:0.19s">
+            <div class="facility-card-img">
+              <img src="https://images.unsplash.com/photo-1519315901367-f34ff9154487?auto=format&fit=crop&w=600&q=80" alt="Indoor Pool">
+            </div>
+            <div class="facility-card-body">
+              <h4>Indoor Pool</h4>
+              <p>Climate-controlled indoor pool for year-round training regardless of weather conditions.</p>
+            </div>
+          </div>
+
+          <div class="facility-card reveal" style="transition-delay:0.26s">
+            <div class="facility-card-img">
+              <img src="../assets/images/facility.png" alt="Changing Rooms">
+            </div>
+            <div class="facility-card-body">
+              <h4>Changing Rooms</h4>
+              <p>Spacious luxury changing suites with private cubicles, premium toiletries, and hair dryers.</p>
+            </div>
+          </div>
+
+          <div class="facility-card reveal" style="transition-delay:0.33s">
+            <div class="facility-card-img">
+              <img src="https://images.unsplash.com/photo-1600965962361-9035dbfd1c50?auto=format&fit=crop&w=600&q=80" alt="Locker Area">
+            </div>
+            <div class="facility-card-body">
+              <h4>Locker Area</h4>
+              <p>Digital secure personal lockers with RFID wristband access for convenient storage.</p>
+            </div>
+          </div>
+
+          <div class="facility-card reveal" style="transition-delay:0.4s">
+            <div class="facility-card-img">
+              <img src="https://i.pinimg.com/1200x/f3/ae/b2/f3aeb2a7d46842befd641c09e4a779d0.jpg" alt="Shower Area">
+            </div>
+            <div class="facility-card-body">
+              <h4>Shower Area</h4>
+              <p>Hot rain-shower stations with premium water pressure and temperature control.</p>
+            </div>
+          </div>
+
+          <div class="facility-card reveal" style="transition-delay:0.47s">
+            <div class="facility-card-img">
+              <img src="../assets/images/coach.png" alt="Viewing Deck">
+            </div>
+            <div class="facility-card-body">
+              <h4>Viewing Deck</h4>
+              <p>Elevated parent viewing gallery with comfortable seating overlooking the main Olympic pool.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SECTION 5: TRAINING MOMENTS CAROUSEL                       -->
+    <!-- ============================================================ -->
+    <section class="section-padding carousel-section">
+      <div class="container">
+        <div class="text-center">
+          <span class="section-tag reveal"><i class="fas fa-play-circle"></i> Training Moments</span>
+          <h2 class="section-title reveal">A Day at AquaRise</h2>
+          <p class="section-subtitle reveal">Watch our swimmers in action — from focused coaching sessions to joyful summer camp activities.</p>
+        </div>
+
+        <div class="carousel-container reveal">
+          <div class="carousel-track">
+            <div class="carousel-slide">
+              <img src="../assets/images/coach.png" alt="Coach Training">
+              <div class="carousel-caption">
+                <h4>Expert Coach Training</h4>
+                <p>One-on-one stroke correction sessions with our certified master coaches.</p>
+              </div>
+            </div>
+            <div class="carousel-slide">
+              <img src="https://images.unsplash.com/photo-1530549387789-4c1017266635?auto=format&fit=crop&w=1000&q=80" alt="Students Learning">
+              <div class="carousel-caption">
+                <h4>Students Learning Together</h4>
+                <p>Group sessions that build camaraderie and accelerate skill development.</p>
+              </div>
+            </div>
+            <div class="carousel-slide">
+              <img src="https://images.unsplash.com/photo-1519315901367-f34ff9154487?auto=format&fit=crop&w=1000&q=80" alt="Group Sessions">
+              <div class="carousel-caption">
+                <h4>Group Training Sessions</h4>
+                <p>Structured group workouts with personalized attention from our coaching staff.</p>
+              </div>
+            </div>
+            <div class="carousel-slide">
+              <img src="https://images.unsplash.com/photo-1600965962361-9035dbfd1c50?auto=format&fit=crop&w=1000&q=80" alt="Fitness Swimming">
+              <div class="carousel-caption">
+                <h4>Fitness Swimming</h4>
+                <p>High-energy aquatic fitness sessions for adults focused on endurance and strength.</p>
+              </div>
+            </div>
+            <div class="carousel-slide">
+              <img src="https://i.pinimg.com/736x/95/0e/2b/950e2bcb29ae0eace7171b37406520ae.jpg" alt="Competition Practice">
+              <div class="carousel-caption">
+                <h4>Competition Practice</h4>
+                <p>Race simulation drills and block starts for competitive swimmer preparation.</p>
+              </div>
+            </div>
+            <div class="carousel-slide">
+              <img src="../assets/images/hero_pool.png" alt="Summer Camp">
+              <div class="carousel-caption">
+                <h4>Summer Camp Fun</h4>
+                <p>Exciting summer camp activities combining swim training with water games and team challenges.</p>
+              </div>
+            </div>
+          </div>
+
+          <button class="carousel-arrow prev" aria-label="Previous"><i class="fas fa-chevron-left"></i></button>
+          <button class="carousel-arrow next" aria-label="Next"><i class="fas fa-chevron-right"></i></button>
+        </div>
+
+        <div class="carousel-dots">
+          <button class="carousel-dot active" aria-label="Slide 1"></button>
+          <button class="carousel-dot" aria-label="Slide 2"></button>
+          <button class="carousel-dot" aria-label="Slide 3"></button>
+          <button class="carousel-dot" aria-label="Slide 4"></button>
+          <button class="carousel-dot" aria-label="Slide 5"></button>
+          <button class="carousel-dot" aria-label="Slide 6"></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SECTION 6: CHAMPIONSHIP HIGHLIGHTS                          -->
+    <!-- ============================================================ -->
+    <section class="section-padding championship-section">
+      <div class="container">
+        <div class="text-center">
+          <span class="section-tag reveal"><i class="fas fa-crown"></i> Victories</span>
+          <h2 class="section-title reveal">Championship Highlights</h2>
+          <p class="section-subtitle reveal">Celebrating our swimmers' remarkable achievements at state, national, and international levels.</p>
+        </div>
+
+        <div class="championship-grid">
+          <div class="champ-card reveal" style="transition-delay:0.05s">
+            <div class="champ-card-img">
+              <img src="https://i.pinimg.com/736x/3f/83/7a/3f837ac508c703d55a04be9c316daea0.jpg" alt="State Championship">
+              <span class="champ-year">2025</span>
+            </div>
+            <div class="champ-card-body">
+              <h4>State Championship</h4>
+              <p>AquaRise team secured 12 gold medals at the State Swimming Championships with outstanding individual performances.</p>
+            </div>
+          </div>
+
+          <div class="champ-card reveal" style="transition-delay:0.15s">
+            <div class="champ-card-img">
+              <img src="../assets/images/hero_pool.png" alt="National Competition">
+              <span class="champ-year">2024</span>
+            </div>
+            <div class="champ-card-body">
+              <h4>National Competition</h4>
+              <p>Our elite squad represented at the National Aquatic Championships, bringing home 5 medals including 2 golds.</p>
+            </div>
+          </div>
+
+          <div class="champ-card reveal" style="transition-delay:0.25s">
+            <div class="champ-card-img">
+              <img src="https://images.unsplash.com/photo-1530549387789-4c1017266635?auto=format&fit=crop&w=600&q=80" alt="Medal Ceremony">
+              <span class="champ-year">2024</span>
+            </div>
+            <div class="champ-card-body">
+              <h4>Medal Ceremony</h4>
+              <p>Glittering medal ceremony celebrating our junior swimmers who swept the podium in freestyle events.</p>
+            </div>
+          </div>
+
+          <div class="champ-card reveal" style="transition-delay:0.35s">
+            <div class="champ-card-img">
+              <img src="https://images.unsplash.com/photo-1519315901367-f34ff9154487?auto=format&fit=crop&w=600&q=80" alt="Swimming Events">
+              <span class="champ-year">2023</span>
+            </div>
+            <div class="champ-card-body">
+              <h4>Swimming Events</h4>
+              <p>AquaRise hosted the Regional Inter-Academy Swim Meet with participation from 15 teams across the state.</p>
+            </div>
+          </div>
+
+          <div class="champ-card reveal" style="transition-delay:0.45s">
+            <div class="champ-card-img">
+              <img src="https://images.unsplash.com/photo-1600965962361-9035dbfd1c50?auto=format&fit=crop&w=600&q=80" alt="Award Winners">
+              <span class="champ-year">2023</span>
+            </div>
+            <div class="champ-card-body">
+              <h4>Award Winners</h4>
+              <p>Recognized as Best Swimming Academy at the National Sports Awards for excellence in aquatic training.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- SECTION 7: GALLERY CTA                                     -->
+    <!-- ============================================================ -->
+    <section class="section-padding gallery-cta-section">
+      <div class="container">
+        <div class="gallery-cta reveal">
+          <h3>Become Part of Our Success Story</h3>
+          <p>Join hundreds of swimmers who have transformed their lives at AquaRise. Your journey to aquatic excellence starts today.</p>
+          <div class="cta-btns">
+            <a href="#" class="btn btn-accent" id="gallery-join-btn"><i class="fas fa-arrow-right"></i> Join AquaRise</a>
+            <a href="contact.html" class="btn-outline-light" id="gallery-contact-btn">Contact Us</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="gallery-lightbox">
+    <button class="lightbox-close" id="lightbox-close" aria-label="Close"><i class="fas fa-times"></i></button>
+    <button class="lightbox-nav prev" id="lightbox-prev" aria-label="Previous"><i class="fas fa-chevron-left"></i></button>
+    <div class="lightbox-content">
+      <img id="lightbox-img" src="" alt="Gallery Image">
+      <div class="lightbox-caption" id="lightbox-caption"></div>
+      <div class="lightbox-counter" id="lightbox-counter"></div>
+    </div>
+    <button class="lightbox-nav next" id="lightbox-next" aria-label="Next"><i class="fas fa-chevron-right"></i></button>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <a href="../index.html" class="logo">
+            <img src="../assets/favicon/favicon.svg" alt="AquaRise Logo">
+            <span>Aqua</span>Rise
+          </a>
+          <p>AquaRise is the premier luxury swimming academy and aquatic center offering world-class training, state-of-the-art facilities, and certified instruction.</p>
+          <div class="social-links" style="justify-content:flex-start;">
+            <a href="https://facebook.com" target="_blank" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://instagram.com" target="_blank" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://linkedin.com" target="_blank" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://twitter.com" target="_blank" class="social-icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://youtube.com" target="_blank" class="social-icon" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="footer-title">Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            
+
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer-title">Support</h3>
+          <ul class="footer-links">
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="terms-condition.html">Terms & Conditions</a></li>
+            <li><a href="booking.html">Book Now</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer-title">Get In Touch</h3>
+          <ul class="footer-contact">
+            <li><i class="fas fa-phone"></i> <a href="tel:+18005557946">+1 (800) 555-SWIM</a></li>
+            <li><i class="fas fa-envelope"></i> <a href="mailto:info@aquarise.com">info@aquarise.com</a></li>
+            <li><i class="fas fa-map-marker-alt"></i> <a href="https://maps.google.com" target="_blank">124 Aquatic Boulevard, Grand Marina</a></li>
+          </ul>
+          <h4 style="margin-top:1.5rem; margin-bottom:0.75rem; font-size:1rem;">Newsletter</h4>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Your Email..." required>
+            <button type="submit" class="btn btn-primary" style="padding:0.6rem 1.2rem;"><i class="fas fa-paper-plane"></i></button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 AquaRise Aquatic Center. All Rights Reserved.</p>
+        <p>Crafted for Luxury Swimming Excellence.</p>
+        <div class="footer-bottom-links">
+          <a href="maintenance.html">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- BACK TO TOP BUTTON -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- JS Scripts -->
+  <script src="../js/theme.js"></script>
+  <script src="../js/rtl.js"></script>
+  <script src="../js/validation.js"></script>
+  <script src="../js/main.js"></script>
+  <script src="../js/gallery.js"></script>
+</body>
+</html>
+

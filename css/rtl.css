@@ -1,0 +1,476 @@
+/* rtl.css - Dynamic Right-to-Left Layout Overrides */
+html[dir="rtl"] body {
+  font-family: 'DM Sans', 'Manrope', system-ui, sans-serif;
+  text-align: right;
+}
+
+html[dir="rtl"] .section-tag i,
+html[dir="rtl"] .btn i {
+  transform: scaleX(-1);
+}
+
+html[dir="rtl"] .stats-floating {
+  right: auto;
+  left: -2rem;
+}
+
+html[dir="rtl"] .facility-card:hover {
+  transform: translateX(-5px);
+}
+
+html[dir="rtl"] .footer-links a:hover {
+  padding-left: 0;
+  padding-right: 5px;
+}
+
+html[dir="rtl"] .footer-title::after {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+html[dir="rtl"] .nav-menu {
+  right: -100%;
+  left: auto;
+}
+
+html[dir="rtl"] .nav-menu.active {
+  right: 0;
+  left: auto;
+}
+
+/* Home2 RTL Overrides */
+html[dir="rtl"] .hero2-content {
+  padding-right: 0;
+  padding-left: 2rem;
+}
+
+html[dir="rtl"] .hero2-stat-card:hover {
+  transform: translateY(-8px) scale(1.02);
+}
+
+html[dir="rtl"] .skill-card-img .skill-level-badge {
+  left: auto;
+  right: 1rem;
+}
+
+html[dir="rtl"] .skill-detail i {
+  margin-left: 0.625rem;
+  margin-right: 0;
+}
+
+html[dir="rtl"] .membership-badge {
+  right: auto;
+  left: -2rem;
+  transform: rotate(-45deg);
+}
+
+html[dir="rtl"] .hero2-btns .btn i {
+  transform: scaleX(-1);
+}
+
+html[dir="rtl"] .age-sessions i {
+  margin-left: 0.5rem;
+  margin-right: 0;
+}
+
+html[dir="rtl"] .reveal-left {
+  transform: translateX(40px);
+}
+
+html[dir="rtl"] .reveal-left.visible {
+  transform: translateX(0);
+}
+
+html[dir="rtl"] .reveal-right {
+  transform: translateX(-40px);
+}
+
+html[dir="rtl"] .reveal-right.visible {
+  transform: translateX(0);
+}
+
+html[dir="rtl"] .comp-card .comp-icon:hover {
+  transform: rotateY(-180deg);
+}
+
+/* About RTL Overrides */
+html[dir="rtl"] .story-image {
+  order: 1;
+}
+
+html[dir="rtl"] .story-content {
+  order: 0;
+}
+
+html[dir="rtl"] .breadcrumb i {
+  transform: scaleX(-1);
+}
+
+html[dir="rtl"] .achievement-item:hover {
+  transform: translateX(-8px);
+}
+
+html[dir="rtl"] .value-card::before {
+  transform-origin: right;
+}
+
+html[dir="rtl"] .value-card:hover::before {
+  transform-origin: right;
+}
+
+html[dir="rtl"] .reveal-left {
+  transform: translateX(40px);
+}
+
+html[dir="rtl"] .reveal-left.visible {
+  transform: translateX(0);
+}
+
+html[dir="rtl"] .reveal-right {
+  transform: translateX(-40px);
+}
+
+html[dir="rtl"] .reveal-right.visible {
+  transform: translateX(0);
+}
+
+html[dir="rtl"] .mission-card:hover .mission-icon {
+  transform: scale(1.1) rotate(5deg);
+}
+
+html[dir="rtl"] .value-card:hover .value-icon {
+  transform: rotateY(-180deg);
+}
+
+html[dir="rtl"] .leader-overlay a:hover {
+  transform: translateY(-3px);
+}
+
+html[dir="rtl"] .leader-card:hover .leader-img img,
+html[dir="rtl"] .story-image:hover img {
+  transform: scale(1.03);
+}
+
+html[dir="rtl"] .about-hero .btn i {
+  transform: scaleX(-1);
+}
+
+/* Services RTL Overrides */
+html[dir="rtl"] .services-hero .breadcrumb i {
+  transform: scaleX(-1);
+}
+
+html[dir="rtl"] .beginner-image {
+  order: 1;
+}
+
+html[dir="rtl"] .beginner-content {
+  order: 0;
+}
+
+html[dir="rtl"] .beginner-features li {
+  text-align: right;
+}
+
+html[dir="rtl"] .ia-card-img .ia-level {
+  left: auto;
+  right: 1rem;
+}
+
+html[dir="rtl"] .specialized-card:hover .spec-icon {
+  transform: scale(1.1) rotate(5deg);
+}
+
+html[dir="rtl"] .camps-item:hover {
+  transform: translateX(-6px);
+}
+
+html[dir="rtl"] .process-step:not(:last-child)::after {
+  right: auto;
+  left: -0.75rem;
+}
+
+html[dir="rtl"] .services-hero .btn i,
+html[dir="rtl"] .btn-outline-light i,
+html[dir="rtl"] .enroll-now-btn i {
+  transform: scaleX(-1);
+}
+
+html[dir="rtl"] .beginner-badge {
+  left: auto;
+  right: 1.5rem;
+}
+
+html[dir="rtl"] .camps-header h3 i {
+  margin-right: 0;
+  margin-left: 0.5rem;
+}
+
+html[dir="rtl"] .reveal-left {
+  transform: translateX(40px);
+}
+
+html[dir="rtl"] .reveal-left.visible {
+  transform: translateX(0);
+}
+
+html[dir="rtl"] .reveal-right {
+  transform: translateX(-40px);
+}
+
+html[dir="rtl"] .reveal-right.visible {
+  transform: translateX(0);
+}
+
+/* Blog RTL Overrides */
+html[dir="rtl"] .blog-hero .breadcrumb i { transform: scaleX(-1); }
+html[dir="rtl"] .sidebar-widget h4::after { left: auto; right: 0; }
+html[dir="rtl"] .sidebar-categories a:hover { padding-left: 0; padding-right: 4px; }
+html[dir="rtl"] .featured-content { padding: 2.5rem 0 2.5rem 2.5rem; }
+html[dir="rtl"] .expert-tip { text-align: right; }
+html[dir="rtl"] .blog-hero .btn i,
+html[dir="rtl"] .read-more-btn i { transform: scaleX(-1); }
+
+/* Gallery RTL Overrides */
+html[dir="rtl"] .gallery-hero .breadcrumb i {
+  transform: scaleX(-1);
+}
+
+html[dir="rtl"] .champ-card-img .champ-year {
+  right: auto;
+  left: 1rem;
+}
+
+html[dir="rtl"] .carousel-arrow.prev {
+  left: auto;
+  right: 1rem;
+}
+
+html[dir="rtl"] .carousel-arrow.next {
+  right: auto;
+  left: 1rem;
+}
+
+html[dir="rtl"] .lightbox-close {
+  right: auto;
+  left: 1.5rem;
+}
+
+html[dir="rtl"] .lightbox-nav.prev {
+  left: auto;
+  right: -4rem;
+}
+
+html[dir="rtl"] .lightbox-nav.next {
+  right: auto;
+  left: -4rem;
+}
+
+html[dir="rtl"] .gallery-hero .btn i,
+html[dir="rtl"] .gallery-cta .btn i {
+  transform: scaleX(-1);
+}
+
+html[dir="rtl"] .lightbox-close:hover {
+  transform: rotate(-90deg);
+}
+
+/* Contact RTL Overrides */
+html[dir="rtl"] .contact-hero .breadcrumb i { transform: scaleX(-1); }
+html[dir="rtl"] .contact-hero .btn i { transform: scaleX(-1); }
+html[dir="rtl"] .info-card .info-icon { margin-left: auto; margin-right: auto; }
+html[dir="rtl"] .form-group label { text-align: right; }
+html[dir="rtl"] .checkbox-group { flex-direction: row-reverse; }
+html[dir="rtl"] .checkbox-group input { margin-left: 0; margin-right: 0; }
+html[dir="rtl"] .form-side-card ul li i { margin-left: 0.75rem; margin-right: 0; }
+html[dir="rtl"] .map-overlay { flex-direction: row-reverse; }
+html[dir="rtl"] .map-overlay .btn i { transform: scaleX(-1); }
+html[dir="rtl"] .faq-item h4 i { margin-left: 0.5rem; margin-right: 0; }
+html[dir="rtl"] .faq-cta .btn i,
+html[dir="rtl"] .faq-cta .btn-outline-light i { transform: scaleX(-1); }
+html[dir="rtl"] .connect-card a { text-align: center; }
+html[dir="rtl"] .hours-card { text-align: center; }
+html[dir="rtl"] .form-side-card h4 i,
+html[dir="rtl"] .form-side-card ul li i { margin-left: 0.5rem; margin-right: 0; }
+html[dir="rtl"] .success-msg .btn i { transform: scaleX(-1); }
+html[dir="rtl"] .form-btns .btn i { transform: scaleX(-1); }
+html[dir="rtl"] .footer-contact li i { margin-left: 0.5rem; margin-right: 0; }
+html[dir="rtl"] .contact-hero .breadcrumb { direction: ltr; }
+html[dir="rtl"] .reveal-left { transform: translateX(40px); }
+html[dir="rtl"] .reveal-left.visible { transform: translateX(0); }
+html[dir="rtl"] .reveal-right { transform: translateX(-40px); }
+html[dir="rtl"] .reveal-right.visible { transform: translateX(0); }
+
+/* Login RTL Overrides */
+html[dir="rtl"] .login-hero .breadcrumb i { transform: scaleX(-1); }
+html[dir="rtl"] .login-hero .breadcrumb { direction: ltr; }
+html[dir="rtl"] .split-image-panel { order: 1; }
+html[dir="rtl"] .login-card { order: 0; }
+html[dir="rtl"] .input-wrapper .toggle-password { right: auto; left: 1rem; }
+html[dir="rtl"] .input-wrapper input { padding-right: 1.1rem; padding-left: 3rem; }
+html[dir="rtl"] .form-options { flex-direction: row-reverse; }
+html[dir="rtl"] .forgot-link { text-align: left; }
+html[dir="rtl"] .remember-group { flex-direction: row-reverse; }
+html[dir="rtl"] .login-btn i { transform: scaleX(-1); }
+html[dir="rtl"] .social-btn i { margin-left: 0.5rem; margin-right: 0; }
+html[dir="rtl"] .security-card { text-align: right; }
+html[dir="rtl"] .security-card .sec-icon { margin-left: 1rem; margin-right: 0; }
+html[dir="rtl"] .login-cta-card .btn i,
+html[dir="rtl"] .login-cta-card .btn-outline-light i { transform: scaleX(-1); }
+html[dir="rtl"] .login-card-header .lock-icon { margin-left: auto; margin-right: auto; }
+html[dir="rtl"] .success-overlay .btn i { transform: scaleX(-1); }
+html[dir="rtl"] .login-hero .btn i { transform: scaleX(-1); }
+html[dir="rtl"] .split-stat { text-align: center; }
+html[dir="rtl"] .reveal-left { transform: translateX(40px); }
+html[dir="rtl"] .reveal-left.visible { transform: translateX(0); }
+html[dir="rtl"] .reveal-right { transform: translateX(-40px); }
+html[dir="rtl"] .reveal-right.visible { transform: translateX(0); }
+
+/* Signup RTL Overrides */
+html[dir="rtl"] .signup-hero .breadcrumb i { transform: scaleX(-1); }
+html[dir="rtl"] .signup-hero .breadcrumb { direction: ltr; }
+html[dir="rtl"] .signup-image-panel { order: 1; }
+html[dir="rtl"] .register-card { order: 0; }
+html[dir="rtl"] .input-wrapper .toggle-password { right: auto; left: 1rem; }
+html[dir="rtl"] .input-wrapper input { padding-right: 1rem; padding-left: 3rem; }
+html[dir="rtl"] .checkbox-group { flex-direction: row-reverse; }
+html[dir="rtl"] .signup-btn i { transform: scaleX(-1); }
+html[dir="rtl"] .register-header .register-icon { margin-left: auto; margin-right: auto; }
+html[dir="rtl"] .signup-success .btn i { transform: scaleX(-1); }
+html[dir="rtl"] .signup-cta-card .btn i,
+html[dir="rtl"] .signup-cta-card .btn-outline-light i { transform: scaleX(-1); }
+html[dir="rtl"] .signup-stat { text-align: center; }
+
+/* FAQ RTL Overrides */
+html[dir="rtl"] .faq-hero .breadcrumb i { transform: scaleX(-1); }
+html[dir="rtl"] .faq-hero .breadcrumb { direction: ltr; }
+html[dir="rtl"] .search-wrapper i { margin-left: 0.5rem; margin-right: 0; }
+html[dir="rtl"] .faq-question { text-align: right; }
+html[dir="rtl"] .faq-question .q-icon { margin-left: 0.5rem; margin-right: 0; }
+html[dir="rtl"] .faq-answer { text-align: right; }
+html[dir="rtl"] .help-card { text-align: right; }
+html[dir="rtl"] .help-card .h-icon { margin-left: 1rem; margin-right: 0; }
+html[dir="rtl"] .faq-cta-card .btn i,
+html[dir="rtl"] .faq-cta-card .btn-outline-light i { transform: scaleX(-1); }
+html[dir="rtl"] .faq-hero .btn i { transform: scaleX(-1); }
+html[dir="rtl"] .help-btns .btn i { transform: scaleX(-1); }
+
+/* Privacy RTL Overrides */
+html[dir="rtl"] .privacy-hero .breadcrumb i { transform: scaleX(-1); }
+html[dir="rtl"] .privacy-hero .breadcrumb { direction: ltr; }
+html[dir="rtl"] .privacy-toc { text-align: right; }
+html[dir="rtl"] .privacy-toc ul li a { border-left: none; border-right: 3px solid transparent; }
+html[dir="rtl"] .privacy-toc ul li a.active { border-left: none; border-right-color: var(--secondary-color); }
+html[dir="rtl"] .privacy-block { text-align: right; }
+html[dir="rtl"] .privacy-sub-card { text-align: right; }
+html[dir="rtl"] .privacy-sub-card ul li::before { margin-left: 0.4rem; margin-right: 0; }
+html[dir="rtl"] .security-notice { text-align: right; }
+html[dir="rtl"] .security-notice .notice-icon { margin-left: 1rem; margin-right: 0; }
+html[dir="rtl"] .rights-card { text-align: center; }
+html[dir="rtl"] .block-list li i { margin-left: 0.5rem; margin-right: 0; }
+html[dir="rtl"] .privacy-cta-card .btn i,
+html[dir="rtl"] .privacy-cta-card .btn-outline-light i { transform: scaleX(-1); }
+
+/* Terms RTL Overrides */
+html[dir="rtl"] .terms-hero .breadcrumb i { transform: scaleX(-1); }
+html[dir="rtl"] .terms-hero .breadcrumb { direction: ltr; }
+html[dir="rtl"] .terms-toc { text-align: right; }
+html[dir="rtl"] .terms-toc ul li a { border-left: none; border-right: 3px solid transparent; }
+html[dir="rtl"] .terms-toc ul li a.active { border-left: none; border-right-color: var(--secondary-color); }
+html[dir="rtl"] .terms-block { text-align: right; }
+html[dir="rtl"] .terms-sub-card { text-align: right; }
+html[dir="rtl"] .terms-sub-card ul li::before { margin-left: 0.4rem; margin-right: 0; }
+html[dir="rtl"] .block-list li i { margin-left: 0.5rem; margin-right: 0; }
+html[dir="rtl"] .agreement-card { text-align: center; }
+html[dir="rtl"] .terms-cta-card .btn i,
+html[dir="rtl"] .terms-cta-card .btn-outline-light i { transform: scaleX(-1); }
+html[dir="rtl"] .agreement-card .cta-btns .btn i { transform: scaleX(-1); }
+
+/* Maintenance RTL Overrides */
+html[dir="rtl"] .theme-floating { right: auto; left: 1.5rem; }
+html[dir="rtl"] .notify-row { direction: rtl; }
+html[dir="rtl"] .maint-footer-card .btn i,
+html[dir="rtl"] .maint-footer-card .btn-outline-light i { transform: scaleX(-1); }
+html[dir="rtl"] .maint-hero .container { direction: rtl; }
+html[dir="rtl"] .maint-info-section { text-align: right; }
+html[dir="rtl"] .notify-card { text-align: center; }
+html[dir="rtl"] .social-grid { direction: rtl; }
+
+/* 404 RTL Overrides */
+html[dir="rtl"] .error-hero .container { direction: rtl; }
+html[dir="rtl"] .error-search-box { flex-direction: row-reverse; padding: 0.2rem 1.5rem 0.2rem 0.2rem; }
+html[dir="rtl"] .error-search-box i { margin-left: 0.5rem; margin-right: 0; }
+html[dir="rtl"] .suggest-card { text-align: right; }
+html[dir="rtl"] .suggest-card .sug-icon { margin-left: 1rem; margin-right: 0; }
+html[dir="rtl"] .error-cta-card .btn i,
+html[dir="rtl"] .error-cta-card .btn-outline-light i { transform: scaleX(-1); }
+html[dir="rtl"] .illustration-wrapper { direction: rtl; }
+
+/* User Dropdown RTL */
+html[dir="rtl"] .user-dropdown {
+  right: auto;
+  left: 0;
+}
+
+html[dir="rtl"] .user-dropdown a i {
+  margin-left: 0.5rem;
+  margin-right: 0;
+}
+
+/* Mobile RTL dropdown inline */
+@media (max-width: 768px) {
+  html[dir="rtl"] .user-dropdown a {
+    border: 1px solid var(--border-color);
+  }
+}
+
+@media (max-width: 320px) {
+  html[dir="rtl"] .header-controls { gap: 0.4rem; }
+}
+
+/* Fix time/number direction in RTL */
+html[dir="rtl"] .hours-time {
+  direction: ltr;
+  display: inline-block;
+}
+
+/* Fix phone number and email direction in RTL */
+html[dir="rtl"] .info-card a {
+  direction: ltr;
+  display: inline-block;
+}
+
+html[dir="rtl"] .featured-content,
+html[dir="rtl"] .blog-card-body {
+  padding: 1.5rem !important;
+}
+
+@media (min-width: 769px) {
+  html[dir="rtl"] .featured-content {
+    padding: 2.5rem 0 2.5rem 2.5rem !important;
+  }
+}
+
+/* Force padding on blog cards in RTL mobile */
+@media (max-width: 768px) {
+  html[dir="rtl"] .featured-content,
+  html[dir="rtl"] .blog-card-body {
+    padding: 1.5rem 1.5rem !important;
+    box-sizing: border-box;
+  }
+}
+
+/* Fix BiDi reordering for time ranges and numeric ratios */
+html[dir="rtl"] .schedule-value {
+  direction: ltr;
+  display: inline-block;
+}
+
+/* FAQ Search Bar RTL fixes */
+html[dir="rtl"] .search-wrapper {
+  padding: 0.2rem 1.5rem 0.2rem 0.2rem;
+}
+html[dir="rtl"] .search-wrapper input {
+  direction: ltr;
+  text-align: right;
+}

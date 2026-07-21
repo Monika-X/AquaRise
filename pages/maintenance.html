@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AquaRise is currently undergoing scheduled maintenance. We'll be back soon with an improved experience.">
+  <title>Maintenance – AquaRise Aquatic Center</title>
+  <link rel="icon" type="image/svg+xml" href="../assets/favicon/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="../css/themes.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/maintenance.css">
+  <link rel="stylesheet" href="../css/rtl.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+  <style>
+    body { overflow-x: hidden; }
+    .header, .footer { display: none; }
+    .theme-floating { position: fixed; top: 1.5rem; inset-inline-end: 1.5rem; z-index: 100; display: flex; gap: 0.5rem; }
+    .floating-logo { position: absolute; top: 1.5rem; inset-inline-start: 1.5rem; z-index: 1000; display: flex; align-items: center; gap: 0.5rem; text-decoration: none; }
+    .theme-floating .control-btn {
+      width: 40px; height: 40px; border-radius: 50%; border: 1px solid var(--glass-border);
+      background: var(--glass-bg); backdrop-filter: blur(12px); color: var(--text-heading);
+      cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 0.9rem;
+      transition: all var(--transition-normal);
+    }
+    .theme-floating .control-btn:hover { border-color: var(--secondary-color); color: var(--secondary-color); }
+  </style>
+</head>
+<body>
+
+  <!-- Floating Logo -->
+  <a href="../index.html" class="floating-logo">
+    <img src="../assets/favicon/favicon.svg" alt="AquaRise Logo" style="height: 40px; width: auto;">
+    <span style="font-size: 1.5rem; font-weight: 700; color: var(--text-heading); font-family: 'DM Sans', sans-serif;">AquaRise</span>
+  </a>
+
+  <div class="theme-floating">
+    <button id="theme-toggle" class="control-btn" aria-label="Toggle Theme" style="width:40px; height:40px; border-radius:50%; padding:0;"><i class="fas fa-moon"></i></button>
+    <button id="rtl-toggle" class="control-btn" aria-label="Toggle RTL" style="width:40px; height:40px; border-radius:50%; padding:0; font-weight:600; font-size:0.75rem;">RTL</button>
+  </div>
+
+  <!-- Floating Background Shapes -->
+  <div class="floating-shapes">
+    <span></span><span></span><span></span><span></span><span></span>
+  </div>
+  <div class="water-ripple"></div>
+
+  <!-- ============ SECTION 1: FULL SCREEN HERO ============ -->
+  <section class="maint-hero section-padding" style="text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+    <div class="container">
+      <img src="../assets/images/maintenance_vector.png" alt="AquaRise Maintenance Vector Illustration" style="max-width: 400px; width: 100%; height: auto; margin: 6rem auto 2rem auto; display: block; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+      <h1>We'll Be Back <span>Soon</span></h1>
+      <p>Our website is currently undergoing scheduled maintenance to bring you an even better experience.</p>
+    </div>
+  </section>
+
+  <!-- ============ SECTION 2: MAINTENANCE INFO ============ -->
+  <section class="maint-info-section section-padding">
+    <div class="container">
+      <div class="maint-info-card reveal">
+        <h3>What We're Working On</h3>
+        <p>We are upgrading our systems to provide you with a faster, safer, and more seamless experience. Thank you for your patience.</p>
+        <div class="maint-info-grid">
+          <div class="maint-info-item">
+            <div class="mi-icon"><i class="fas fa-rocket"></i></div>
+            <h4>Website Upgrade</h4>
+            <p>Modern interface</p>
+          </div>
+          <div class="maint-info-item">
+            <div class="mi-icon"><i class="fas fa-chart-line"></i></div>
+            <h4>Performance</h4>
+            <p>Faster loading</p>
+          </div>
+          <div class="maint-info-item">
+            <div class="mi-icon"><i class="fas fa-shield-alt"></i></div>
+            <h4>Security</h4>
+            <p>Enhanced protection</p>
+          </div>
+          <div class="maint-info-item">
+            <div class="mi-icon"><i class="fas fa-smile"></i></div>
+            <h4>Experience</h4>
+            <p>Better UX</p>
+          </div>
+        </div>
+        <p style="margin-top:1.5rem;font-size:0.88rem;color:var(--text-light);"><i class="fas fa-clock" style="color:var(--secondary-color);"></i> Expected to be back within the next few days.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SECTION 3: COUNTDOWN ============ -->
+  <section class="maint-countdown-section section-padding">
+    <div class="container text-center">
+      <span class="section-tag">Coming Soon</span>
+      <h2 class="section-title">Launch Countdown</h2>
+      <p class="section-subtitle">We'll be back with something amazing</p>
+      <div class="countdown-grid reveal">
+        <div class="countdown-card"><div class="count-number" id="count-days">00</div><div class="count-label">Days</div></div>
+        <div class="countdown-card"><div class="count-number" id="count-hours">00</div><div class="count-label">Hours</div></div>
+        <div class="countdown-card"><div class="count-number" id="count-minutes">00</div><div class="count-label">Minutes</div></div>
+        <div class="countdown-card"><div class="count-number" id="count-seconds">00</div><div class="count-label">Seconds</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SECTION 4: NOTIFY ME ============ -->
+  <section class="maint-notify-section section-padding">
+    <div class="container">
+      <div class="notify-card reveal">
+        <div id="notify-content">
+          <h3>Get Notified</h3>
+          <p>Leave your details and we'll send you a message when we're back online.</p>
+          <form class="notify-form" id="notify-form" novalidate data-no-global-validate>
+            <div class="notify-row">
+              <input type="text" id="notify-name" name="name" placeholder="Your Name" required>
+              <input type="email" id="notify-email" name="email" placeholder="Your Email" required>
+            </div>
+            <button type="submit" class="btn btn-primary btn-submit"><i class="fas fa-bell"></i> Notify Me</button>
+          </form>
+        </div>
+        <div class="notify-success" id="notify-success">
+          <h4><i class="fas fa-check-circle" style="color:#2A9D8F;"></i> You're on the List!</h4>
+          <p>We'll notify you as soon as AquaRise is back online.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SECTION 5: QUICK LINKS ============ -->
+  <section class="maint-links-section section-padding">
+    <div class="container text-center">
+      <span class="section-tag">Navigation</span>
+      <h2 class="section-title">Quick Links</h2>
+      <p class="section-subtitle">These pages will be available after maintenance</p>
+      <div class="links-grid reveal">
+        <div class="link-card"><div class="link-icon"><i class="fas fa-home"></i></div><h4>Home</h4><p>Available After Maintenance</p></div>
+        <div class="link-card"><div class="link-icon"><i class="fas fa-swimmer"></i></div><h4>Programs</h4><p>Available After Maintenance</p></div>
+        <div class="link-card"><div class="link-icon"><i class="fas fa-images"></i></div><h4>Gallery</h4><p>Available After Maintenance</p></div>
+        <div class="link-card"><div class="link-icon"><i class="fas fa-blog"></i></div><h4>Blog</h4><p>Available After Maintenance</p></div>
+        <div class="link-card"><div class="link-icon"><i class="fas fa-headset"></i></div><h4>Contact</h4><p>Available After Maintenance</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SECTION 6: STAY CONNECTED ============ -->
+  <section class="maint-social-section section-padding">
+    <div class="container text-center">
+      <span class="section-tag">Follow Us</span>
+      <h2 class="section-title">Stay Connected</h2>
+      <p class="section-subtitle">Reach out to us on social media or via phone and email</p>
+      <div class="social-grid reveal">
+        <a href="https://facebook.com/aquarise" target="_blank" class="social-card fb"><div class="s-icon"><i class="fab fa-facebook-f"></i></div><h4>Facebook</h4></a>
+        <a href="https://instagram.com/aquarise" target="_blank" class="social-card ig"><div class="s-icon"><i class="fab fa-instagram"></i></div><h4>Instagram</h4></a>
+        <a href="https://linkedin.com/company/aquarise" target="_blank" class="social-card li"><div class="s-icon"><i class="fab fa-linkedin-in"></i></div><h4>LinkedIn</h4></a>
+        <a href="https://twitter.com/aquarise" target="_blank" class="social-card tw"><div class="s-icon"><i class="fab fa-twitter"></i></div><h4>Twitter</h4></a>
+        <a href="https://youtube.com/@aquarise" target="_blank" class="social-card yt"><div class="s-icon"><i class="fab fa-youtube"></i></div><h4>YouTube</h4></a>
+        <a href="https://wa.me/18005557946" target="_blank" class="social-card wa"><div class="s-icon"><i class="fab fa-whatsapp"></i></div><h4>WhatsApp</h4></a>
+        <a href="tel:+18005557946" class="social-card ph"><div class="s-icon"><i class="fas fa-phone"></i></div><h4>Phone</h4></a>
+        <a href="mailto:info@aquarise.com" class="social-card em"><div class="s-icon"><i class="fas fa-envelope"></i></div><h4>Email</h4></a>
+        <a href="https://maps.google.com/?q=124+Aquatic+Boulevard+Grand+Marina" target="_blank" class="social-card gm"><div class="s-icon"><i class="fas fa-map-marker-alt"></i></div><h4>Maps</h4></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SECTION 7: FOOTER MESSAGE ============ -->
+  <section class="maint-footer-section section-padding">
+    <div class="container">
+      <div class="maint-footer-card reveal">
+        <h3>Thank You For Your Patience</h3>
+        <p>We are working hard to bring you an improved AquaRise experience. See you soon!</p>
+        <div class="ft-btns">
+          <a href="#" class="btn btn-primary" id="refresh-btn"><i class="fas fa-sync"></i> Refresh Page</a>
+          <a href="../index.html" class="btn-outline-light"><i class="fas fa-home"></i> Back to Home</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="../js/theme.js"></script>
+  <script src="../js/rtl.js"></script>
+  <script src="../js/validation.js"></script>
+  <script src="../js/maintenance.js"></script>
+</body>
+</html>
+
