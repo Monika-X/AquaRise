@@ -111,6 +111,8 @@ img {
   background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
   color: #FFFFFF;
   box-shadow: 0 8px 20px rgba(11, 79, 140, 0.25);
+  border: none;
+  padding: calc(0.9rem + 2px) calc(2rem + 2px);
 }
 
 .btn-primary:hover {
@@ -135,6 +137,8 @@ img {
   background: var(--accent-color);
   color: #102A43;
   box-shadow: 0 8px 20px rgba(255, 200, 87, 0.3);
+  border: none;
+  padding: calc(0.9rem + 2px) calc(2rem + 2px);
 }
 
 .btn-accent:hover {
