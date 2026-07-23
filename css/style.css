@@ -891,3 +891,8 @@ textarea:focus-visible {
   white-space: nowrap;
   border: 0;
 }
+
+/* Fix cropping for coach image */
+img[src*="coach.png"] {
+  object-position: top;
+}

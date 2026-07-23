@@ -277,16 +277,17 @@
   overflow: hidden;
 }
 
-.timeline-section::before {
+.timeline-track::before {
   content: '';
   position: absolute;
-  top: 50%;
+  top: calc(1rem + 12px);
   left: 0;
   right: 0;
   height: 3px;
   background: linear-gradient(90deg, var(--primary-color), var(--secondary-color), var(--primary-color));
   transform: translateY(-50%);
   opacity: 0.2;
+  z-index: 1;
 }
 
 .timeline-track {
